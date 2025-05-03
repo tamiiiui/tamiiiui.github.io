@@ -1,0 +1,92 @@
+body{
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    text-align: center;
+}
+
+.post{
+    background-color: #bdbdbd;
+    border: 4px solid #000000;
+    border-radius: 2px;
+    box-shadow: 4px 6px #00000080;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.blog{
+    padding: 8px;
+}
+
+.foot{
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.date{
+    padding-left: 20px;
+    text-align: left;
+}
+
+.line{
+    border: 1px dashed #000000;
+    margin: 2px;
+}
+
+.pic{
+    padding: 4px;
+}
+
+.text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list{
+    text-align: left;
+    padding-right: 20px;
+}
+
+/* -------------------- SIZE -------------------- */
+/* For phones and tablets */
+@media screen and (max-width: 900px) {
+    .blog{
+        max-width: 600px;
+    }
+
+    .line{
+        max-width: 560px;
+    }
+
+    .pic{
+        max-width: 400px;
+    }
+
+    .list{
+        padding-left: 20px;
+    }
+}
+
+/* For desktop computers */
+@media screen and (min-width: 900px) {
+    .blog{
+        width: 720px;
+    }
+
+    .line{
+        width: 660px;
+    }
+
+    .pic{
+        width: 480px;
+    }
+
+    .list{
+        padding-left: 120px;
+    }
+}
