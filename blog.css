@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffff;
+    background-color: #dbdbdb;
     font-family: sans-serif;
     font-size: 14px;
     margin: 0px;
@@ -7,10 +7,10 @@ body{
 }
 
 .post{
-    background-color: #bdbdbd;
-    border: 4px solid #000000;
+    background-color: #ffffff;
+    border: 1px solid #9999a0;
     border-radius: 2px;
-    box-shadow: 4px 6px #00000080;
+    box-shadow: 4px 6px #000010a0;
     padding-top: 8px;
     padding-left: 8px;
     padding-right: 8px;
@@ -53,8 +53,28 @@ body{
 }
 
 /* -------------------- SIZE -------------------- */
-/* For phones and tablets */
-@media screen and (max-width: 900px) {
+
+/* phone */
+@media screen and (max-width:600px){
+    .blog{
+        max-width: 100%;
+    }
+
+    .line{
+        max-width: 98%;
+    }
+
+    .pic{
+        max-width: 92%;
+    }
+
+    .list{
+        padding-left: 20px;
+    }
+}
+
+/* For tablets */
+@media screen and (min-width:600px) and (max-width: 900px) {
     .blog{
         max-width: 600px;
     }
