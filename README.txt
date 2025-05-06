@@ -25,10 +25,9 @@ GUIDELINES:
         - Repost is allowed with credit.
         - Tracing is allowed non-commercially. Do not sell images that are traced
           from my work.
-    - Guidelines are subject to change without previous notice. If multiple versions
-      of the guidelines are found, then only the most recent version applies for all
-      works. Additionally, I reserve the right to ask for content takedown, whether
-      the guidelines are being followed or not.
+    - Guidelines are subject to change without previous notice. Additionally, I
+      reserve the right to ask for content takedown, whether the guidelines are being
+      followed or not.
     - If you have any questions, feel free to contact me at any of my linked socials.
 .
 .
