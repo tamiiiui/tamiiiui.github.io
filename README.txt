@@ -23,6 +23,7 @@ GUIDELINES:
     - ARTWORK:
         - You may use any images as a profile picture, banner, or decoration.
         - Repost is allowed with credit.
+        - Translation is allowed with credit for the original.
         - Tracing is allowed non-commercially. Do not sell images that are traced
           from my work.
     - Guidelines are subject to change without previous notice. Additionally, I
