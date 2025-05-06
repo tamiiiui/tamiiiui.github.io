@@ -1,0 +1,19 @@
+    /* For phones */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .page {
+        width: 100%;
+    }    
+}
+    /* For tablets */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .page{
+        width: 600px;
+    }
+}
+
+/* For desktop computers */
+@media screen and (min-width: 900px) {
+    .page{
+        width: 720px;
+    }
+}
