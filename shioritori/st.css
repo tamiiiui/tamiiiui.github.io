@@ -1,0 +1,8 @@
+.head{
+    background: "./img/header_img.png";
+}
+
+body{
+    background-image: url("./img/bg_checker_dark_32.png");
+    background-attachment: scroll;
+}
