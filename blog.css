@@ -6,6 +6,10 @@ body{
     text-align: center;
 }
 
+img{
+    text-align: center;
+}
+
 .post{
     background-color: #ffffff;
     border: 1px solid #ffffff;
