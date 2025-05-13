@@ -1,5 +1,5 @@
 body{
-    background-color: #dbdbdb;
+    background-color: #f0f0f0;
     font-family: sans-serif;
     font-size: 14px;
     margin: 0px;
@@ -8,14 +8,11 @@ body{
 
 .post{
     background-color: #ffffff;
-    border: 1px solid #9999a0;
-    border-radius: 2px;
-    box-shadow: 4px 6px #000010a0;
-    padding-top: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 0px;
-    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    box-shadow: 4px 6px #00001099;
+    padding: 8px;
+    text-align: left;
 }
 
 .blog{
@@ -74,7 +71,7 @@ body{
 }
 
 /* For tablets */
-@media screen and (min-width:600px) and (max-width: 900px) {
+@media screen and (min-width:600px){
     .blog{
         max-width: 600px;
     }
@@ -89,24 +86,5 @@ body{
 
     .list{
         padding-left: 20px;
-    }
-}
-
-/* For desktop computers */
-@media screen and (min-width: 900px) {
-    .blog{
-        width: 720px;
-    }
-
-    .line{
-        width: 660px;
-    }
-
-    .pic{
-        width: 480px;
-    }
-
-    .list{
-        padding-left: 120px;
     }
 }
