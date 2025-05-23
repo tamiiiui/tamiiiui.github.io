@@ -23,7 +23,7 @@ img{
 .date{
     background-image: linear-gradient(#222, #333);
     color: #eee;
-    border-radius: 16px 0px 16px 0px;
+    border-radius: 16px 0px 0px 0px;
     padding-top: 8px;
     padding-bottom: 2px;
     text-align: center;
