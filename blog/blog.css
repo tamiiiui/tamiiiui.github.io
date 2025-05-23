@@ -23,7 +23,7 @@ img{
 .date{
     background-image: linear-gradient(#222, #333);
     color: #eee;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 0px 16px 0px;
     padding-top: 8px;
     padding-bottom: 2px;
     text-align: center;
@@ -38,7 +38,7 @@ img{
 .post{
     background-color: #fff;
     border: 1px solid #222;
-    border-radius: 16px;
+    border-radius: 16px 0px 16px 0px;
 /*    box-shadow: 4px 6px #00001099; */
     padding-bottom: 2px;
     margin: 16px;
@@ -51,7 +51,7 @@ img{
 
 #pinned{
     border: 3px solid #222;
-    border-radius: 18px 18px 16px 16px;
+    border-radius: 18px 0px 16px 0px;
 }
 
 /* -------------------- SIZE -------------------- */
