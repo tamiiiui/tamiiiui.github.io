@@ -1,95 +1,88 @@
 body{
-    background-color: #f0f0f0;
-    font-family: sans-serif;
+    background-color: #eee;
+    font-family: Tahoma, sans-serif;
     font-size: 14px;
     margin: 0px;
     text-align: center;
+}
+
+footer{
+    margin-top: 8px;
+    margin-bottom: 400px;
+    text-align: center;
+    vertical-align: bottom;
 }
 
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.post{
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-/*    box-shadow: 4px 6px #00001099;*/
-    padding: 8px;
-    text-align: left;
-}
-
-.blog{
-    padding: 8px;
-}
-
-.foot{
-    padding-top: 20px;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-.date{
-    padding-left: 20px;
-    text-align: left;
-}
-
-.line{
-    border: 1px dashed #000000;
-    margin: 2px;
-}
-
-.pic{
     padding: 4px;
 }
 
-.text{
-    padding-left: 20px;
-    padding-right: 20px;
+.date{
+    background-image: linear-gradient(#222, #333);
+    color: #eee;
+    border-radius: 16px 16px 0px 0px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    text-align: center;
 }
 
 .list{
     text-align: left;
+    padding-left: 20px;
     padding-right: 20px;
+}
+
+.post{
+    background-color: #fff;
+    border: 0px solid #e0e0e0;
+    border-radius: 16px;
+/*    box-shadow: 4px 6px #00001099;*/
+    padding-bottom: 2px;
+    margin: 16px;
+    text-align: left;
+}
+
+.text{
+    padding-top: 8px;
+}
+
+#pinned{
+    border: 2px solid #222;
+    border-radius: 18px 18px 16px 16px;
 }
 
 /* -------------------- SIZE -------------------- */
 /* phone */
 @media screen and (max-width:600px){
-    .blog{
-        max-width: 100%;
-    }
-
-    .line{
+    img{
         max-width: 98%;
     }
 
-    .pic{
-        max-width: 92%;
+    .post{
+        max-width: 100%;
     }
 
-    .list{
-        padding-left: 20px;
+    .text{
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
-/* */
+/* pc */
 @media screen and (min-width:600px){
-    .blog{
-        max-width: 600px;
+    img{
+        max-width: 520px;
     }
 
-    .line{
-        max-width: 560px;
+    .post{
+        max-width: 580px;
     }
 
-    .pic{
-        max-width: 400px;
-    }
-
-    .list{
-        padding-left: 20px;
+    .text{
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
