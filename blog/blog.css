@@ -20,6 +20,10 @@ img{
     padding: 4px;
 }
 
+a:link{
+    color: #888;
+}
+
 .date{
     background-image: linear-gradient(#222, #333);
     color: #eee;
