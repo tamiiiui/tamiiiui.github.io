@@ -1,6 +1,6 @@
 body{
     background-color: #fff;
-    font-family: Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif, system-ui;
     font-size: 14px;
     margin: 0px;
     text-align: center;
@@ -21,15 +21,19 @@ img{
 }
 
 a:link{
-    color: #888;
+    color: #799;
+}
+
+a:visited, a:hover{
+    color: #abb
 }
 
 .date{
-    background-image: linear-gradient(#222, #333);
+    background-image: linear-gradient(#222, #233);
     color: #eee;
-    border-radius: 16px 0px 0px 0px;
-    padding-top: 8px;
-    padding-bottom: 2px;
+    border-radius: 16px 16px 0px 0px;
+    padding-top: 12px;
+    padding-bottom: 4px;
     text-align: center;
 }
 
@@ -42,20 +46,21 @@ a:link{
 .post{
     background-color: #fff;
     border: 1px solid #222;
-    border-radius: 16px 0px 16px 0px;
-/*    box-shadow: 4px 6px #00001099; */
-    padding-bottom: 2px;
-    margin: 16px;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0px 0px 8px #00101088;
+    padding-bottom: 1px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     text-align: left;
 }
 
 .text{
-    padding-top: 8px;
+    padding-top: 6px;
 }
 
 #pinned{
-    border: 3px solid #222;
-    border-radius: 18px 0px 16px 0px;
+    border: 3px solid #eee;
+    border-radius: 20px 20px 0px 0px;
 }
 
 /* -------------------- SIZE -------------------- */
@@ -66,27 +71,27 @@ a:link{
     }
 
     .post{
-        max-width: 100%;
+        max-width: 95%;
     }
 
     .text{
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
-/* pc */
+/* tablet & pc */
 @media screen and (min-width:600px){
     img{
-        max-width: 520px;
+        max-width: 500px;
     }
 
     .post{
-        max-width: 580px;
+        max-width: 520px;
     }
 
     .text{
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
