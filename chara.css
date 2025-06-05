@@ -1,0 +1,125 @@
+/*-------------------------------- colors --------------------------------*/
+.lgray{ color: #bbb;}
+.ych{ color: #ca4;}
+
+/*-------------------------------- charac --------------------------------*/
+.chartb{
+    margin-top: 64px;
+    font-size: 0px;
+    max-width: 100%;
+    display: inline-block;
+}
+.chartb > div{
+    border: 0px solid #000;
+    min-height: 400px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.chartb_l{ width: 560px;}
+.chartb_s{ width: 340px;}
+
+.l{ right: 30px;}
+.r{ left: 30px;}
+
+/*-------- 1 --------*/
+.card_1{
+    background-color: #fff;
+    color: #888;
+    font-size: 24px;
+    width: 280px;
+    text-align: left;
+    position: relative; 
+}
+.card_1 div{ font-size: 12px;}
+.card_1 p{ padding-left: 6px;}
+
+/*-------- 2 --------*/
+.card_2{
+    background-color: #eee;
+    border: 0px dashed #999;
+    border-radius: 10px 10px 10px 0px;
+    text-align: left;
+
+    width: 280px;
+    margin-top: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative; 
+}
+.card_2 div{
+    margin-top: 4px;
+    width: 100%;
+}
+.card_2 div div{
+    background-color: #bbb;
+    height: 2px;
+    display: inline-block;
+}
+.card_2 div div p{ background-color: #eee;}
+.card_2 div p{
+    color: #888;
+    font-size: 12px;
+    width: fit-content;
+    margin-left: 6px;
+    position: relative;
+    top: -8px;
+}
+
+/*-------- 3 --------*/
+.card_3{
+    background-color: #fff;
+    color: #888;
+    font-size: 14px;
+    text-align: left;
+
+    width: 340px;
+    margin-top: 4px;
+    padding-bottom: 16px;
+}
+.card_3 hr{
+    border: 1px solid #bbb;
+    margin-bottom: 6px;
+}
+
+/*-------- 4 --------*/
+.card_4{
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 3px inset #ddd;
+    border-radius: 32px;
+    color: #888;
+    font-size: 14px;
+    text-align: left;
+
+    width: 340px;
+    margin-top: 4px;
+    padding-bottom: 16px;
+}
+
+/*-------- ▼ --------*/
+.collapsible{
+    border: none;
+    outline: none;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.collapsible:hover{ color: #888;}
+.card_2 .collapsible{
+    background-color: #eee;
+    top: 2px;
+}
+.card_2 .collapsible{ left: 260px;}
+.card_2 > .extra{ margin-top: -12px;}
+.card_3 .collapsible{
+    background-color: #0000;
+    left: 320px;
+}
+
+.extra{
+    display:none;
+    overflow: hidden;
+}
+
+/*-------------------------------- screen --------------------------------*/
+@media screen and (max-width: 900px){
+}

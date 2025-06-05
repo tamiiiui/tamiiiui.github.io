@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>?</title>
+        <link rel="icon" type="image/x-icon" href="________">
+        <link rel="stylesheet" type="text/css" media="all" href="./main.css" >
+        <link rel="stylesheet" type="text/css" media="all" href="./chara.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sour%20Gummy&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+            <header>
+            </header>
+            <!--------------------------------  ▼ main ▼  -------------------------------->
+            <div class="chartb">
+                <style>
+                </style>
+                <div class="chartb_s">
+                </div>
+                <div class="chartb_s">
+                    <div class="card_1 r">
+                        <p>Shinyama Shiori</p>
+                        <div><p>AKA. <span class="ych">"Yocchan"</span></p></div>
+                    </div>
+                    <div class="card_2 r">
+                        <div>
+                            <div><div><p>GENDER <span class="spacer">┊&nbsp;&nbsp; PRONOUNS</span></p></div></div>
+                            <p>nonbinary ┊&nbsp; <span class="ych">he</span>/him</p>
+                            <div><div><p>AGE ┊&nbsp;&nbsp; BIRTHDAY</p></div></div>
+                            <p>12 ┊&nbsp; 04/04</p>
+                            <div><div><p>AFFILIATION</p></div></div>
+                            <p>∎∎∎∎∎ Cemetery</p>
+                        </div>
+                        <button type="button" class="collapsible ych">▼</button>
+                        <div class="extra">
+                            <div><div><p>BLOOD ┊&nbsp;&nbsp; FAV FOOD</p></div></div>
+                            <p><span class="ych">O</span> ┊&nbsp; oyakodon</p>
+                        </div>
+                        <a></a>
+                    </div>
+                    <div class="card_3">
+                        <hr>
+                        <p>asdfghjk</p>
+                        <button type="button" class="collapsible lgray">▼</button>    
+                        <div class="extra card_4">
+                            <p>asdfghjk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <nav>
+                    <a href="https://x.com/tamiiiui">twitter</a> | 
+                    <a href="https://toyhou.se/swooperfly">toyhouse</a> | 
+                    <a href="https://neospring.org/@tamifly">neospring</a> | 
+                    <a href="https://artfight.net/~tami">art fight</a>
+                </nav>
+                <p>© 2025 tamiiiui</p>
+            </footer>
+        </center>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            } 
+        </script>
+    </body>
+</html>
