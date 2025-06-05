@@ -1,16 +1,17 @@
 /*-------------------------------- colors --------------------------------*/
 .lgray{ color: #bbb;}
-.ych{ color: #ca4;}
+.ych{ color: #ca0;}
+.red{ color: #e20;}
 
 /*-------------------------------- charac --------------------------------*/
 .chartb{
-    margin-top: 64px;
+    color: #666;
     font-size: 0px;
     max-width: 100%;
+    margin-top: 128px;
     display: inline-block;
 }
 .chartb > div{
-    border: 0px solid #000;
     min-height: 400px;
     display: inline-block;
     vertical-align: bottom;
@@ -24,19 +25,17 @@
 /*-------- 1 --------*/
 .card_1{
     background-color: #fff;
-    color: #888;
     font-size: 24px;
-    width: 280px;
     text-align: left;
+    width: 280px;
     position: relative; 
 }
 .card_1 div{ font-size: 12px;}
-.card_1 p{ padding-left: 6px;}
+.card_1 p{ margin-left: 6px;}
 
 /*-------- 2 --------*/
 .card_2{
     background-color: #eee;
-    border: 0px dashed #999;
     border-radius: 10px 10px 10px 0px;
     text-align: left;
 
@@ -48,19 +47,23 @@
 }
 .card_2 div{
     margin-top: 4px;
-    width: 100%;
+    width: 280px;
 }
 .card_2 div div{
     background-color: #bbb;
     height: 2px;
     display: inline-block;
 }
-.card_2 div div p{ background-color: #eee;}
+.card_2 div div p{
+    background-color: #eee;
+    margin-left: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
 .card_2 div p{
-    color: #888;
     font-size: 12px;
     width: fit-content;
-    margin-left: 6px;
+    margin-left: 12px;
     position: relative;
     top: -8px;
 }
@@ -68,7 +71,6 @@
 /*-------- 3 --------*/
 .card_3{
     background-color: #fff;
-    color: #888;
     font-size: 14px;
     text-align: left;
 
@@ -76,23 +78,61 @@
     margin-top: 4px;
     padding-bottom: 16px;
 }
-.card_3 hr{
-    border: 1px solid #bbb;
-    margin-bottom: 6px;
-}
+.card_3 hr{ border: 1px solid #bbb;}
+.card_3 p{ margin-top: 12px;}
 
 /*-------- 4 --------*/
-.card_4{
+.card_4 {
+    font-size: 0px;
+    width: 340px;
+    margin-top: 16px;
+    display: inline-block;
+}
+.card_4 div div{
     background-color: #fff;
-    box-shadow: 0px 0px 0px 3px inset #ddd;
-    border-radius: 32px;
-    color: #888;
+    box-shadow: 0px 0px 0px 3px inset #eee;
+    border-radius: 24px;
     font-size: 14px;
     text-align: left;
-
-    width: 340px;
+    
+    width: 240px;
+    min-height: 32px;
     margin-top: 4px;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
+    display: inline-block;
+    vertical-align: top;
+
+    position: relative;
+    left: -80px;
+}
+.card_4 div div p{
+    font-size: 14px;
+    width: 216px;
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-right: 8px;
+    position: initial;
+}
+.card_4 div p{
+    font-size: 12px;
+    width: 340px;
+    margin-top: 0px;
+    margin-left: 12px;
+    display: inline-block;
+
+    position: relative;
+    top: -26px;
+}
+.card_4 p.c3{ top: -8px; margin-bottom: 4px;}
+.card_4 p.c4{ top: 0px;  margin-bottom: 16px;}
+.card_4 img{
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+
+    position: relative;
+    top: 20px;
+    left: 260px;
 }
 
 /*-------- ▼ --------*/
@@ -103,12 +143,12 @@
     position: relative;
     cursor: pointer;
 }
-.collapsible:hover{ color: #888;}
+.collapsible:hover{ color: #666;}
 .card_2 .collapsible{
     background-color: #eee;
     top: 2px;
 }
-.card_2 .collapsible{ left: 260px;}
+.card_2 .collapsible{ left: 256px;}
 .card_2 > .extra{ margin-top: -12px;}
 .card_3 .collapsible{
     background-color: #0000;
