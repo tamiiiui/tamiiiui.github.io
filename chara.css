@@ -1,11 +1,24 @@
 /*-------------------------------- colors --------------------------------*/
-.lgray{ color: #bbb;}
-.ych{ color: #ca0;}
-.red{ color: #e20;}
+.lgray{ color: #aaa;}
+.blu{ color: #05c;}
+.ych{ color: #b90;}
+.red{ color: #c20;}
+
+img.lgray{filter: drop-shadow(-4px 0px #ddd);}
+
+div.qblu{ box-shadow: -2px 0px 0px 3px inset #dde, 2px 0px 0px 3px inset #dde;}
+div.qgrn{ box-shadow: -2px 0px 0px 3px inset #ded, 2px 0px 0px 3px inset #ded;}
+div.qcyn{ box-shadow: -2px 0px 0px 3px inset #dee, 2px 0px 0px 3px inset #dee;}
+div.qred{ box-shadow: -2px 0px 0px 3px inset #edd, 2px 0px 0px 3px inset #edd;}
+div.qpnk{ box-shadow: -2px 0px 0px 3px inset #ede, 2px 0px 0px 3px inset #ede;}
+div.qhot{ box-shadow: -2px 0px 0px 3px inset #eed, 2px 0px 0px 3px inset #eed;}
+div.qgry{ box-shadow: -2px 0px 0px 3px inset #ddd, 2px 0px 0px 3px inset #ddd;}
+
+a:visited{ color: #0ab;}
 
 /*-------------------------------- charac --------------------------------*/
 .chartb{
-    color: #666;
+    color: #333;
     font-size: 0px;
     max-width: 100%;
     margin-top: 128px;
@@ -37,6 +50,7 @@
 .card_2{
     background-color: #eee;
     border-radius: 10px 10px 10px 0px;
+    box-shadow: 8px -4px #eed;
     text-align: left;
 
     width: 280px;
@@ -88,24 +102,23 @@
     margin-top: 16px;
     display: inline-block;
 }
-.card_4 div div{
+.card_4 .c4{ position: relative;}
+.sec{ top: -50px;}
+.thi{ top: -100px;}
+.q{ top: -100px;}
+.card_4 .quote{
     background-color: #fff;
-    box-shadow: 0px 0px 0px 3px inset #eee;
     border-radius: 24px;
-    font-size: 14px;
-    text-align: left;
     
     width: 240px;
     min-height: 32px;
     margin-top: 4px;
+    margin-left: 20px;
     padding-bottom: 12px;
     display: inline-block;
     vertical-align: top;
-
-    position: relative;
-    left: -80px;
 }
-.card_4 div div p{
+.card_4 .quote p{
     font-size: 14px;
     width: 216px;
     margin-top: 4px;
@@ -113,26 +126,24 @@
     margin-right: 8px;
     position: initial;
 }
-.card_4 div p{
+.card_4 p{
+    text-align: left;
     font-size: 12px;
     width: 340px;
-    margin-top: 0px;
-    margin-left: 12px;
+    margin-top: 4px;
+    margin-left: 32px;
     display: inline-block;
-
-    position: relative;
-    top: -26px;
 }
-.card_4 p.c3{ top: -8px; margin-bottom: 4px;}
-.card_4 p.c4{ top: 0px;  margin-bottom: 16px;}
+.card_4 p.c3{ top: -27px; margin-bottom: 4px;}
+.card_4 p.c4{ top: -11px;  margin-bottom: 16px;}
 .card_4 img{
-    width: 80px;
-    height: 80px;
-    margin: 0px;
+    width: 100px;
+    height: 100px;
+    margin-left: 260px;
+    margin-right: 0px;
 
     position: relative;
     top: 20px;
-    left: 260px;
 }
 
 /*-------- ▼ --------*/
@@ -143,7 +154,7 @@
     position: relative;
     cursor: pointer;
 }
-.collapsible:hover{ color: #666;}
+.collapsible:hover{ color: #333;}
 .card_2 .collapsible{
     background-color: #eee;
     top: 2px;
