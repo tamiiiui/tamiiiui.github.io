@@ -1,18 +1,16 @@
 /*-------------------------------- colors --------------------------------*/
-.lgray{ color: #aaa;}
+.lgray{ color: #bbb;}
 .blu{ color: #05c;}
 .ych{ color: #b90;}
-.red{ color: #c20;}
+.red{ color: #c30;}
 
-img.lgray{filter: drop-shadow(-4px 0px #ddd);}
+table.tgry .c2d{ border: 1px solid #bbb;}
+table.tgry .tl{ background-color: #bbb;}
 
-div.qblu{ box-shadow: -2px 0px 0px 3px inset #dde, 2px 0px 0px 3px inset #dde;}
-div.qgrn{ box-shadow: -2px 0px 0px 3px inset #ded, 2px 0px 0px 3px inset #ded;}
-div.qcyn{ box-shadow: -2px 0px 0px 3px inset #dee, 2px 0px 0px 3px inset #dee;}
-div.qred{ box-shadow: -2px 0px 0px 3px inset #edd, 2px 0px 0px 3px inset #edd;}
-div.qpnk{ box-shadow: -2px 0px 0px 3px inset #ede, 2px 0px 0px 3px inset #ede;}
-div.qhot{ box-shadow: -2px 0px 0px 3px inset #eed, 2px 0px 0px 3px inset #eed;}
-div.qgry{ box-shadow: -2px 0px 0px 3px inset #ddd, 2px 0px 0px 3px inset #ddd;}
+img.lgray{filter: drop-shadow(-8px 0px #ddd);}
+
+div.cgry{ box-shadow: 0px 0px 2px 0px #444;}
+div.qgry{ box-shadow: -6px 0px 0px 3px inset #ddd, 6px 0px 0px 3px inset #ddd;}
 
 a:visited{ color: #0ab;}
 
@@ -38,48 +36,31 @@ a:visited{ color: #0ab;}
 /*-------- 1 --------*/
 .card_1{
     background-color: #fff;
-    font-size: 24px;
+    font-size: 12px;
     text-align: left;
     width: 280px;
     position: relative; 
 }
-.card_1 div{ font-size: 12px;}
+.c1p{ font-size: 28px;}
 .card_1 p{ margin-left: 6px;}
 
 /*-------- 2 --------*/
-.card_2{
-    background-color: #eee;
-    border-radius: 10px 10px 10px 0px;
-    box-shadow: 8px -4px #eed;
+
+.c2 table { text-align: right; border-collapse: collapse;}
+tr.c2r{ width: 280px;}
+td.bigd{ height: 32px;}
+td.smld{ margin-top: 8px;}
+.c2d{ height: 24px; padding-right: 4px; align-content: center; display: inline-block;}
+.tl{ font-size: 12px; width:  94px; border-radius: 8px 0px 0px 8px; color: #fff;}
+.tr{ font-size: 14px; width: 174px; border-radius: 0px 8px 8px 0px;}
+
+.c2{
+    background-color: #fff;
     text-align: left;
 
     width: 280px;
-    margin-top: 16px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 16px;
     position: relative; 
-}
-.card_2 div{
-    margin-top: 4px;
-    width: 280px;
-}
-.card_2 div div{
-    background-color: #bbb;
-    height: 2px;
-    display: inline-block;
-}
-.card_2 div div p{
-    background-color: #eee;
-    margin-left: 8px;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-.card_2 div p{
-    font-size: 12px;
-    width: fit-content;
-    margin-left: 12px;
-    position: relative;
-    top: -8px;
 }
 
 /*-------- 3 --------*/
@@ -113,7 +94,6 @@ a:visited{ color: #0ab;}
     width: 240px;
     min-height: 32px;
     margin-top: 4px;
-    margin-left: 20px;
     padding-bottom: 12px;
     display: inline-block;
     vertical-align: top;
@@ -130,16 +110,14 @@ a:visited{ color: #0ab;}
     text-align: left;
     font-size: 12px;
     width: 340px;
-    margin-top: 4px;
-    margin-left: 32px;
+    margin-top: 2px;
+    margin-left: 12px;
     display: inline-block;
 }
-.card_4 p.c3{ top: -27px; margin-bottom: 4px;}
-.card_4 p.c4{ top: -11px;  margin-bottom: 16px;}
 .card_4 img{
     width: 100px;
     height: 100px;
-    margin-left: 260px;
+    margin-left: 240px;
     margin-right: 0px;
 
     position: relative;
@@ -150,20 +128,20 @@ a:visited{ color: #0ab;}
 .collapsible{
     border: none;
     outline: none;
-    font-size: 12px;
+    font-size: 16px;
     position: relative;
     cursor: pointer;
 }
-.collapsible:hover{ color: #333;}
+.collapsible:hover{ color: #444;}
 .card_2 .collapsible{
     background-color: #eee;
-    top: 2px;
+    top: 4px;
 }
-.card_2 .collapsible{ left: 256px;}
+.card_2 .collapsible{ left: 248px;}
 .card_2 > .extra{ margin-top: -12px;}
 .card_3 .collapsible{
     background-color: #0000;
-    left: 320px;
+    left: 314px;
 }
 
 .extra{
@@ -172,5 +150,7 @@ a:visited{ color: #0ab;}
 }
 
 /*-------------------------------- screen --------------------------------*/
-@media screen and (max-width: 900px){
+@media screen and (min-width: 800px){
+    .c4{ margin-left: 20px;}
+    img.c4{ margin-left: 260px;}
 }
