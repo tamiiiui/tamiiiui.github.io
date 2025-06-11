@@ -7,14 +7,32 @@
 table.tgry .c2d{ border: 1px solid #bbb;}
 table.tgry .tl{ background-color: #bbb;}
 
-img.lgray{filter: drop-shadow(-8px 0px #ddd);}
+img.lgray{filter: drop-shadow(-9px 0px #ddd);}
 
 div.cgry{ box-shadow: 0px 0px 2px 0px #444;}
-div.qgry{ box-shadow: -6px 0px 0px 3px inset #ddd, 6px 0px 0px 3px inset #ddd;}
+div.qgry{ background-color: #ddd;}
 
 a:visited{ color: #0ab;}
 
 /*-------------------------------- charac --------------------------------*/
+.cont{ position: relative; z-index: 1;}
+.pic{ top: -100px;}
+
+.paper{
+    filter:
+    drop-shadow(3px 0 0 #fff) 
+    drop-shadow(0 3px 0 #fff)
+    drop-shadow(-3px 0 0 #fff) 
+    drop-shadow(0 -3px 0 #fff)
+    drop-shadow(2px 0 0 #fff) 
+    drop-shadow(0 2px 0 #fff)
+    drop-shadow(-2px 0 0 #fff) 
+    drop-shadow(0 -2px 0 #fff)
+    drop-shadow(-1px 2px 3px #0014);
+    position: relative;
+    /* top, left ----> HTML*/
+}
+
 .chartb{
     color: #444;
     font-size: 0px;
@@ -25,7 +43,7 @@ a:visited{ color: #0ab;}
 .chartb > div{
     min-height: 400px;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .chartb_l{ width: 560px;}
 .chartb_s{ width: 340px;}
@@ -35,7 +53,6 @@ a:visited{ color: #0ab;}
 
 /*-------- 1 --------*/
 .card_1{
-    background-color: #fff;
     font-size: 12px;
     text-align: left;
     width: 280px;
@@ -55,7 +72,6 @@ td.smld{ margin-top: 8px;}
 .tr{ font-size: 14px; width: 174px; border-radius: 0px 8px 8px 0px;}
 
 .c2{
-    background-color: #fff;
     text-align: left;
 
     width: 280px;
@@ -65,10 +81,9 @@ td.smld{ margin-top: 8px;}
 
 /*-------- 3 --------*/
 .card_3{
-    background-color: #fff;
     font-size: 14px;
     text-align: left;
-
+    
     width: 340px;
     margin-top: 4px;
     padding-bottom: 16px;
@@ -84,26 +99,35 @@ td.smld{ margin-top: 8px;}
     display: inline-block;
 }
 .card_4 .c4{ position: relative;}
-.sec{ top: -50px;}
-.thi{ top: -100px;}
+.snd{ top: -60px;}
+.trd{ top: -120px;}
 .q{ top: -100px;}
 .card_4 .quote{
-    background-color: #fff;
-    border-radius: 24px;
+    border-radius: 26px;
+    box-shadow: 1px 2px 4px 1px #0014;
     
     width: 240px;
-    min-height: 32px;
     margin-top: 4px;
-    padding-bottom: 12px;
+    margin-bottom: 2px;
     display: inline-block;
     vertical-align: top;
 }
+.card_4 .quote div{
+    background-color: #fff;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    border-radius: 24px;
+    width: 224px;
+    height: 100%;
+}
 .card_4 .quote p{
     font-size: 14px;
-    width: 216px;
-    margin-top: 4px;
-    margin-left: 20px;
-    margin-right: 8px;
+    width: 210px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 12px;
     position: initial;
 }
 .card_4 p{
@@ -150,7 +174,21 @@ td.smld{ margin-top: 8px;}
 }
 
 /*-------------------------------- screen --------------------------------*/
-@media screen and (min-width: 800px){
-    .c4{ margin-left: 20px;}
-    img.c4{ margin-left: 260px;}
+@media screen and (max-width: 680px){
+    .top220{ top: 220px;}
+    
+    .pic{ max-width: 400px;}
+    .chartb_s{ width: 100%;}
+    .cont{ background-color: #fffe;}
+    .cont_s::before, .cont_s::after{
+        content: ".";
+
+        display: inline-block;
+        position: relative;
+        height: 12px;
+        width: 100%;
+    }
+    .cont_s::before{ background-image: linear-gradient(#0000, #fffe);}
+    .cont_s::after{ background-image: linear-gradient(#fffe, #0000);}
+    
 }
