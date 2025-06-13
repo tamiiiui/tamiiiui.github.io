@@ -4,13 +4,14 @@
 .ych{ color: #b90;}
 .red{ color: #c30;}
 
-table.tgry .c2d{ border: 1px solid #bbb;}
-table.tgry .tl{ background-color: #bbb;}
+table.tgry .c2d{ border-bottom: 1px solid #bbb;}
+table.tgry .tl p{ background-image: url(./cat/img/bg_checker_light_24.png); background-position: right;
+border: 1px solid #bbb;}
 
-img.lgray{filter: drop-shadow(-9px 0px #ddd);}
+img.lgray{filter: drop-shadow(-4px 0px 1px #0014) drop-shadow(-7px 0px #ddd);}
 
-div.cgry{ box-shadow: 0px 0px 2px 0px #444;}
-div.qgry{ background-color: #ddd;}
+div.cgry{ box-shadow: 0px 0px px 0px #444;}
+div.qgry{ background-image: url(./shioritori/img/bg_checker_dark_24.png);}
 
 a:visited{ color: #0ab;}
 
@@ -20,15 +21,15 @@ a:visited{ color: #0ab;}
 
 .paper{
     filter:
-    drop-shadow(3px 0 0 #fff) 
+/*    drop-shadow(3px 0 0 #fff) 
     drop-shadow(0 3px 0 #fff)
     drop-shadow(-3px 0 0 #fff) 
     drop-shadow(0 -3px 0 #fff)
     drop-shadow(2px 0 0 #fff) 
     drop-shadow(0 2px 0 #fff)
     drop-shadow(-2px 0 0 #fff) 
-    drop-shadow(0 -2px 0 #fff)
-    drop-shadow(-1px 2px 3px #0014);
+    drop-shadow(0 -2px 0 #fff) */
+    drop-shadow(-1px 2px 1px #0014);
     position: relative;
     /* top, left ----> HTML*/
 }
@@ -48,8 +49,8 @@ a:visited{ color: #0ab;}
 .chartb_l{ width: 560px;}
 .chartb_s{ width: 340px;}
 
-.l{ right: 30px;}
-.r{ left: 30px;}
+.l{ right: 40px;}
+.r{ left: 40px;}
 
 /*-------- 1 --------*/
 .card_1{
@@ -64,17 +65,17 @@ a:visited{ color: #0ab;}
 /*-------- 2 --------*/
 
 .c2 table { text-align: right; border-collapse: collapse;}
-tr.c2r{ width: 280px;}
-td.bigd{ height: 32px;}
-td.smld{ margin-top: 8px;}
+tr.c2r{ width: 260px;}
 .c2d{ height: 24px; padding-right: 4px; align-content: center; display: inline-block;}
-.tl{ font-size: 12px; width:  94px; border-radius: 8px 0px 0px 8px; color: #fff;}
-.tr{ font-size: 14px; width: 174px; border-radius: 0px 8px 8px 0px;}
+.tl{ font-size: 12px; width:  94px; }
+.tl p{ margin-top: 2px; margin-left: 4px; margin-right: 4px; margin-bottom: 2px; padding: 2px;
+    padding-left: 4px; padding-right: 4px; display: inline-flex; }
+.tr{ font-size: 14px; width: 154px; }
 
 .c2{
     text-align: left;
 
-    width: 280px;
+    width: 260px;
     padding-top: 16px;
     position: relative; 
 }
@@ -99,33 +100,35 @@ td.smld{ margin-top: 8px;}
     display: inline-block;
 }
 .card_4 .c4{ position: relative;}
-.snd{ top: -60px;}
-.trd{ top: -120px;}
+.snd{ top: -50px;}
+.trd{ top: -100px;}
 .q{ top: -100px;}
 .card_4 .quote{
     border-radius: 26px;
-    box-shadow: 1px 2px 4px 1px #0014;
+    box-shadow: -1px 2px 1px 1px #0014;
     
-    width: 240px;
+    width: 250px;
     margin-top: 4px;
     margin-bottom: 2px;
     display: inline-block;
     vertical-align: top;
+    position: relative;
+    left: -10px;
 }
 .card_4 .quote div{
     background-color: #fff;
-    margin-top: 2px;
+    margin-top: 3px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     border-radius: 24px;
-    width: 224px;
+    width: 234px;
     height: 100%;
 }
 .card_4 .quote p{
     font-size: 14px;
-    width: 210px;
-    margin-left: 10px;
+    width: 200px;
+    margin-left: 16px;
     margin-right: 0px;
     margin-bottom: 12px;
     position: initial;
@@ -135,8 +138,10 @@ td.smld{ margin-top: 8px;}
     font-size: 12px;
     width: 340px;
     margin-top: 2px;
-    margin-left: 12px;
+    margin-left: 24px;
     display: inline-block;
+    position: relative;
+    left: -10px;
 }
 .card_4 img{
     width: 100px;
