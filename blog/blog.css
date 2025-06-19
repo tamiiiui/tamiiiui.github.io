@@ -6,7 +6,14 @@ body{
     text-align: center;
 }
 
+a:link{ color: #0ab;}
+a:visited{ color: #888;}
+a:hover{ color: #07a;}
+
 footer{
+    font-size: 12px;
+    font-family: tahoma, sans-serif;
+    color: #888;
     margin-top: 8px;
     margin-bottom: 400px;
     text-align: center;
@@ -20,18 +27,9 @@ img{
     padding: 4px;
 }
 
-a:link{
-    color: #588;
-}
-
-a:visited, a:hover{
-    color: #bcc
-}
-
 .date{
-    background-image: linear-gradient(#000, #333);
+    background-image: url(./shioritori/img/bg_checker_dark_32.png);
     color: #fff;
-    border-radius: 16px 16px 0px 0px;
     padding-top: 12px;
     padding-bottom: 4px;
     text-align: center;
@@ -45,10 +43,9 @@ a:visited, a:hover{
 
 .post{
     background-color: #fff;
-    border: 1px solid #222;
-    border-radius: 16px 16px 12px 12px;
+    border: 0px solid #222;
     box-shadow: 0px 0px 2px #00101088;
-    padding-bottom: 12px;
+    padding-bottom: 4px;
     margin-top: 32px;
     margin-bottom: 32px;
     text-align: left;
@@ -63,42 +60,25 @@ a:visited, a:hover{
 
 .text{
     padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #pinned{
-    border: 3px solid #eee;
-    border-radius: 20px 20px 12px 12px;
+    border: 4px solid #fff;
+    border-image: url(./shioritori/img/bg_checker_dark_32.png);
+    border-image-repeat: repeat;
 }
 
 /* -------------------- SIZE -------------------- */
 /* phone */
 @media screen and (max-width:600px){
-    img{
-        max-width: 98%;
-    }
-
-    .post{
-        max-width: 95%;
-    }
-
-    .text{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
+    img{ max-width: 98%;}
+    .post{ max-width: 95%;}
 }
 
 /* tablet & pc */
 @media screen and (min-width:600px){
-    img{
-        max-width: 500px;
-    }
-
-    .post{
-        max-width: 520px;
-    }
-
-    .text{
-        padding-left: 8px;
-        padding-right: 8px;
-    }
+    img{ max-width: 500px;}
+    .post{ max-width: 520px;}
 }
