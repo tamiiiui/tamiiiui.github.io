@@ -75,6 +75,7 @@ img{
     font-size: 12px;
     color: #888;
     position: relative;
+    max-width: 540px;
 }
 .fl{ text-align: left; left: 16px; margin-top: 32px;}
 .fr{ text-align: right; left: -16px;}
