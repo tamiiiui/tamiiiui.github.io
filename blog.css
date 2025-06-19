@@ -53,7 +53,7 @@ img{
 }
 
 .withbg{
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./img/post_bg.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./blog/img/post_bg.png");
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: right bottom;
