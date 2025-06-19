@@ -76,21 +76,18 @@ img{
     color: #888;
     position: relative;
 }
+.fl{ text-align: left; left: 16px; margin-top: 32px;}
+.fr{ text-align: right; left: -16px;}
 
 /* -------------------- SIZE -------------------- */
 /* phone */
 @media screen and (max-width:600px){
     img{ max-width: 98%;}
     .post{ max-width: 95%;}
-    .fl{ text-align: left; left: 16px; margin-top: 16px;}
-    .fr{ text-align: right; left: -16px;}
 }
 
 /* tablet & pc */
 @media screen and (min-width:600px){
     img{ max-width: 500px;}
     .post{ max-width: 520px;}
-    .arrow{ max-width: 300px;}
-    .fl{ left: -220px; margin-top: 16px;}
-    .fr{ left: 220px;}
 }
