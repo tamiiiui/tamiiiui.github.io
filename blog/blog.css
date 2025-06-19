@@ -28,7 +28,7 @@ img{
 }
 
 .date{
-    background-image: url(./shioritori/img/bg_checker_dark_32.png);
+    background-image: url(../shioritori/img/bg_checker_dark_32.png);
     color: #fff;
     padding-top: 12px;
     padding-bottom: 4px;
@@ -52,7 +52,7 @@ img{
 }
 
 .withbg{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./img/post_bg.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./img/post_bg.png");
     background-size: 220px;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -66,7 +66,7 @@ img{
 
 #pinned{
     border: 4px solid #fff;
-    border-image: url(./shioritori/img/bg_checker_dark_32.png);
+    border-image: url(../shioritori/img/bg_checker_dark_32.png);
     border-image-repeat: repeat;
 }
 
