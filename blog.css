@@ -6,6 +6,7 @@ body{
     text-align: center;
 }
 
+a{ font-weight: bold;}
 a:link{ color: #0ab;}
 a:visited{ color: #888;}
 a:hover{ color: #07a;}
