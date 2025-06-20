@@ -76,15 +76,18 @@ img{
     font-size: 12px;
     color: #888;
     max-width: 540px;
+    position: relative;
 }
-.fl{ text-align: left; left: 16px; margin-top: 32px;}
-.fr{ text-align: right; left: -16px;}
+.fl{ text-align: left; margin-top: 32px;}
+.fr{ text-align: right;}
 
 /* -------------------- SIZE -------------------- */
 /* phone */
 @media screen and (max-width:600px){
     img{ max-width: 98%;}
     .post{ max-width: 95%;}
+    .fl{ left: 16px;}
+    .fr{ left: -16px;}
 }
 
 /* tablet & pc */
