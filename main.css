@@ -42,8 +42,7 @@ a#here:hover{ border: 1px solid #eee;}
 
 img {
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
     display: inline-block;
 }
 
@@ -90,9 +89,8 @@ footer{
     font-family: "Zen Kaku Gothic New", tahoma, sans-serif;
     font-size: 12px;
 
-    margin-top: 48px;
-    padding-top: 10px;
-    padding-bottom: 128px;
+    margin-top: 64px;
+    padding: 10px 0px 192px;
 }
 footer a{
     font-weight: bold;
@@ -112,29 +110,47 @@ footer p{ height: 16px;}
     
     max-width: 720px;
     min-height: 400px;
-    margin: 16px 4px;
+    margin: 32px 4px 16px;
     padding: 32px 4px;
 }
 
 .main h1{ margin-top: 64px;}
-
-.marrow{
-    font-family: "Zen Kaku Gothic New", tahoma, sans-serif;
+.main h2{
     position: relative;
     top: -16px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
-.mpaper{
-    background: #fff;
+.m_dcyn{ background: #4aa;}
+.m_lgry{ background: #ccc;}
+.dcyn{ border: 1px dashed #4aa;}
+.dcyn2{ border: 2px dashed #4aa;}
+.m_outer{
     background-image: url(./shioritori/img/bg_diag_light_32.png);
     background-blend-mode: multiply;
     background-size: 8px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 1px #00101088;
+    border: none;
+    border-radius: 20px;
+    padding: 26px 6px 24px;
+    box-shadow: 0px 1px 2px #00101088;
 }
+.m_inner{
+    background: #fff;
+    background-image: inherit;
+    background-blend-mode: inherit;
+    background-size: inherit;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: inherit;
+}
+.m_inner_inner{
+    display: inline-block;
+    margin: 0px auto;
+}
+
 
 /*-------------------------------- screen --------------------------------*/
 @media screen and (max-width: 660px){
     header nav{ height: 80px;}
     header img{ top: 80px;}
+    hr{ max-width: 90%;}
 }
