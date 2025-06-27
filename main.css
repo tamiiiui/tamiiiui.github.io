@@ -7,7 +7,14 @@ body{
     font-family: tahoma, sans-serif;
     font-size: 14px;
 }
+
+a:link{ color: #0ab;}
+a:visited{ color: #888;}
+a:hover{ color: #07a;}
+a img:hover{ filter: brightness( 0.5) saturate(1.5)}
+
 h1{ font-family: 'Mochiy Pop One', 'LGXW Marker Gothic', tahoma, sans-serif;}
+h1, h2, h3, h4, h5, h6, p{ margin: 12px 16px 2px;}
 
 hr{
     margin: 8px auto;
@@ -24,17 +31,25 @@ hr.ndorg{ border: 1px dashed #b40;}
 hr.ndylw{ border: 1px dashed #a90;}
 hr.ndlim{ border: 1px dashed #390;}
 hr.ndcyn{ border: 1px dashed #079;}
+hr.dblu{ border: 1px dashed #04c;}
 .ndred#here{ border: 1px solid #900;}
 .ndorg#here{ border: 1px solid #b40;}
 .ndylw#here{ border: 1px solid #a90;}
 .ndlim#here{ border: 1px solid #390;}
 .ndcyn#here{ border: 1px solid #079;}
 a#here:hover{ border: 1px solid #eee;}
-.ndred:hover, .ndorg:hover, .ndylw:hover, .ndlim:hover, .ndcyn:hover{ color: #eee;} 
+.ndred:hover, .ndorg:hover, .ndylw:hover, .ndlim:hover, .ndcyn:hover{ color: #eee;}
+
+img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
 
 header img{
-    width: 800px;
-    height: 100px;
+    position: relative;
+    top: 40px;
 }
 header nav {
     font-family: "LXGW Marker Gothic", helvetica, sans-serif;
@@ -101,20 +116,7 @@ footer p{ height: 16px;}
     padding: 32px 4px;
 }
 
-a:link{ color: #0ab;}
-a:visited{ color: #888;}
-a:hover{ color: #07a;}
-a img:hover{ filter: brightness( 0.5) saturate(1.5)}
-
-h1, h2, h3, h4, h5, h6, p{ margin: 12px 16px 2px;}
-.main h1{ margin-top: 92px;}
-
-img {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
+.main h1{ margin-top: 64px;}
 
 .marrow{
     font-family: "Zen Kaku Gothic New", tahoma, sans-serif;
@@ -134,4 +136,5 @@ img {
 /*-------------------------------- screen --------------------------------*/
 @media screen and (max-width: 660px){
     header nav{ height: 80px;}
+    header img{ top: 80px;}
 }
