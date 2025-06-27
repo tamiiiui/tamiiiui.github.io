@@ -1,0 +1,28 @@
+.bmark{ display: inline-block; text-decoration: none;}
+.bmark img{
+    margin-top: 4px;
+    width: 200px;
+    height: 40px;
+}
+.bmark::before{
+    font-size: 14px;
+    background: #cef;
+    background-image: url(./shioritori/img/bg_diag_light_32.png);
+    background-blend-mode: multiply;
+    background-size: 8px;
+    border: 1px solid #478;
+    border-top: none;
+    border-left: none;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 0px 2px #00101088;
+    content: "❤️️";
+    padding-bottom: 1px;
+    margin-left: -20px;
+    position: relative;
+    top: -24px;
+    left: 24px;
+    z-index: 1;
+}
+.bmark2::before{
+    top:-44px
+}
