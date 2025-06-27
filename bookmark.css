@@ -6,11 +6,11 @@
 }
 .bmark::before{
     font-size: 14px;
-    background: #cef;
+    background: #c0f4f4;
     background-image: url(./shioritori/img/bg_diag_light_32.png);
     background-blend-mode: multiply;
     background-size: 8px;
-    border: 1px solid #478;
+    border: 1px solid #488;
     border-top: none;
     border-left: none;
     border-radius: 0px 0px 12px 12px;
