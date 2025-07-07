@@ -74,9 +74,7 @@ img{
 }
 
 #pinned{
-    border: 6px solid #fff;
-    border-image: url(./shioritori/img/bg_checker_dark_32.png);
-    border-image-repeat: repeat;
+    border: 2px solid #e30;
 }
 
 .arrow{
