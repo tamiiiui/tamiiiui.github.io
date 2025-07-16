@@ -55,7 +55,6 @@ img{
     box-shadow: 0px 0px 2px #00101088;
     padding-bottom: 4px;
     margin-top: 28px;
-    margin-bottom: 28px;
     text-align: left;
 }
 
@@ -82,9 +81,21 @@ img{
     color: #888;
     max-width: 540px;
     position: relative;
+    margin-top: 32px;
 }
-.fl{ text-align: left; margin-top: 32px;}
+.fl{ text-align: left;}
 .fr{ text-align: right;}
+
+.tags{ text-align: right;}
+.tags span{
+    margin: 8px 4px;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 0px 0px 2px #00101088;
+    width: fit-content;
+    color: #888;
+}
 
 /* -------------------- SIZE -------------------- */
 /* phone */
