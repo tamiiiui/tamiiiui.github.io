@@ -90,7 +90,7 @@ img{
 .tags span{
     font-size: 12px;
     margin: 8px 4px;
-    padding: 4px;
+    padding: 2px 4px;
     border-radius: 4px;
     display: inline-block;
     box-shadow: 0px 0px 2px #00101088;
@@ -102,7 +102,7 @@ img{
 /* phone */
 @media screen and (max-width:600px){
     img{ max-width: 98%;}
-    .post{ max-width: 95%;}
+    .post, .tags{ max-width: 95%;}
     .fl{ left: 16px;}
     .fr{ left: -16px;}
 }
@@ -110,5 +110,5 @@ img{
 /* tablet & pc */
 @media screen and (min-width:600px){
     img{ max-width: 500px;}
-    .post{ max-width: 500px;}
+    .post, .tags{ max-width: 500px;}
 }
