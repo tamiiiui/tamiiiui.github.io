@@ -98,6 +98,13 @@ img{
     color: #888;
 }
 
+/* -------------------- COLR -------------------- */
+span.sbld{ font-weight: bold;}
+span.sred{ color: #c21}
+span.spnk1{ color: #c16}
+span.sblk{ color: #222}
+span.scyn{ color: #1ac}
+
 /* -------------------- SIZE -------------------- */
 /* phone */
 @media screen and (max-width:600px){
