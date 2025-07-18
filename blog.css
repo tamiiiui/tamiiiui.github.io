@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: #fff;
     font-family: "Zen Kaku Gothic New", Verdana, Tahoma, sans-serif, system-ui;
@@ -10,6 +15,9 @@ a{ font-weight: bold;}
 a:link{ color: #0ab;}
 a:visited{ color: #888;}
 a:hover{ color: #07a;}
+
+p, ul{ margin: 12px 4px;}
+li{ margin: 2px 4px;}
 
 hr{
     border: 1px dashed #aaa;
@@ -34,9 +42,13 @@ img{
 }
 
 .date{
+    background-color: #222;
     background-image: url(./shioritori/img/bg_checker_dark_32.png);
-    color: #ccc;
-    padding-top: 12px;
+    background-size: 24px;
+    background-blend-mode: difference;
+    border-radius: 4px 4px 0px 0px;
+    color: #eee;
+    padding-top: 10px;
     padding-bottom: 4px;
     text-align: center;
     font-size: 16px;
@@ -51,7 +63,7 @@ img{
 
 .post{
     background-color: #fff;
-    border: 0px solid #222;
+    border-radius: 4px;
     box-shadow: 0px 0px 2px #00101088;
     padding-bottom: 4px;
     margin-top: 28px;
@@ -71,9 +83,42 @@ img{
     padding-right: 20px;
     font-family: tahoma, sans-serif, system-ui;
 }
+#pinned{ margin-bottom: 48px;}
+#pinned .date{ background-color: #a20;}
+#pinned .date b{
+    background-color: #0006;
+    border-radius: 4px;
+    padding: 0px 6px;
+}
+#pinned::before{
+    content: "- pinned -";
+    font-family: "LXGW Marker Gothic", Verdana, Tahoma, sans-serif, system-ui;
+    font-size: 16px;
+    font-weight: bold;
+    background: #eee;
+    border-left: 3px dashed #bbb;
+    border-right: 3px dashed #bbb;
+    border-radius: 4px;
+    box-shadow: 3px 3px #00101088;
+    color: #d30;
+    
+    margin-left: -20px;
+    padding: 0px 4px 2px;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    transform: rotate(-15deg);
+}
+#pinned::after{
+    content: url(./blog/img/blog-pin.png);
+    box-shadow: 6px 6px #00101088;
 
-#pinned{
-    border: 2px solid #e30;
+    margin-left: 320px;
+    position: absolute;
+    top: -16px;
+    z-index: 1;
+    transform: scale(0.5) rotate(10deg);
+    filter:  brightness(0.95);
 }
 
 .arrow{
@@ -86,8 +131,12 @@ img{
 .fl{ text-align: left;}
 .fr{ text-align: right;}
 
-.tags{ text-align: right;}
+.tags{
+    font-size: 0px;
+    text-align: right;
+}
 .tags span{
+    background-color: #fff;
     font-size: 12px;
     margin: 8px 4px;
     padding: 2px 4px;
@@ -112,6 +161,7 @@ span.scyn{ color: #1ac}
     .post, .tags{ max-width: 95%;}
     .fl{ left: 16px;}
     .fr{ left: -16px;}
+    #pinned::after{ left: -120px;}
 }
 
 /* tablet & pc */
