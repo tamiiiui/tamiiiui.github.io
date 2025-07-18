@@ -83,7 +83,13 @@ img{
     padding-right: 20px;
     font-family: tahoma, sans-serif, system-ui;
 }
-#pinned{ margin-bottom: 48px;}
+#pinned{
+    background-image: url(./blog/img/blog-pin.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 128px;
+    margin-bottom: 48px;
+}
 #pinned .date{ background-color: #a20;}
 #pinned .date b{
     background-color: #0006;
@@ -108,17 +114,6 @@ img{
     top: 28px;
     z-index: 1;
     transform: rotate(-15deg);
-}
-#pinned::after{
-    content: url(./blog/img/blog-pin.png);
-    box-shadow: 6px 6px #00101088;
-
-    margin-left: 320px;
-    position: absolute;
-    top: -16px;
-    z-index: 1;
-    transform: scale(0.5) rotate(10deg);
-    filter:  brightness(0.95);
 }
 
 .arrow{
