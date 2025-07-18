@@ -1,0 +1,183 @@
+.ch{
+    max-width: 720px;
+    font-family: "Zen Kaku Gothic New", Verdana, Tahoma, sans-serif, system-ui;
+    font-size: 0px;
+    margin: 64px 0px;
+}
+.ch-big, .ch-sml{ display: inline-block;}
+.ch-big{ width: 362px;}
+.ch-sml{ width: 340px;}
+.ch-l{ margin-right: auto; text-align: right;}
+.ch-r{ margin-left: auto; text-align: left;}
+
+/* -------------------- QUOT -------------------- */
+.ch-quote{
+    font-size: 32px;
+    color: #444;
+    font-style: italic;
+    width: fit-content;
+    padding: 0px 12px;
+}
+
+/* -------------------- CLRS -------------------- */
+.qred{ color: #c21;}
+/*.qred{ border-bottom: 2px dashed #c21;}*/
+
+/* -------------------- TABL -------------------- */
+.ch-table{
+    font-size: 0px;
+    width: 260px;
+    color: #444;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 8px;
+}
+.ch-table div{ display: inline-block;}
+
+.ch-a, .ch-b{
+    margin: 1px 0px;
+    padding: 0px 0px 2px;
+    width: 260px;
+    border-radius: 4px;
+}
+.ch-a{ background-color: #eed;}
+.ch-b{ background-color: #ddc;}
+
+.ch-tl, .ch-tr{ font-size: 14px;}
+.ch-tl{
+    font-weight: bold;
+    width: 68px;
+    padding-left: 6px;
+    text-align: left;
+}
+.ch-tr{
+    width: 180px;
+    padding-right: 6px;
+    text-align: right;
+}
+
+.ch-mini{
+    max-width: 100px;
+    vertical-align: bottom;
+    position: relative;
+}
+/* -------------------- DESC -------------------- */
+.ch-desc{
+    color: #444;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid #ccb;
+    border-radius: 8px;
+
+    width: 360px;
+    margin-top: 8px;
+}
+.ch-desc p{ margin: 6px 8px;}
+
+/* -------------------- BTNS -------------------- */
+.ch-buttons{
+    width: 360px;
+    font-size: 0px;
+    margin-top: 16px;
+}
+.ch-btn{
+    border: none;
+    border-radius: 4px 4px 0px 0px;
+    color: #f8f8f8;
+    font-family: "Zen Kaku Gothic New", Verdana, Tahoma, sans-serif, system-ui;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: inline-block;
+    margin: 0px 1px;
+    padding: 0px 4px 2px;
+}
+.ch-btn:hover{
+    filter: brightness(0.5) saturate(2);
+    cursor: pointer;
+}
+.btn-triv{
+    background-color: #cb0;
+    border-top: 3px dashed #ed0;
+}
+.btn-lv{
+    background-color: #d68;
+    border-top: 3px dashed #b24;
+}
+.btn-l{ margin-left: 4px;}
+.btn-r{ margin-right: 4px;}
+
+.ch-btn-d{
+    border-radius: 8px;
+    font-size: 14px;
+    width: 360px;
+    color: #444;
+
+    display: none;
+    position: relative;
+    top: -2px;
+}
+
+/*----*/
+.ch-trivia{
+    text-align: center;
+    border: 1px solid #cb0;
+    background-color: #ffe;
+}
+.ch-trivia p{ margin: 6px 8px;}
+.ch-trivia img{
+    max-width: 320px;
+    mix-blend-mode: multiply;
+    margin-bottom: 2px;
+}
+
+p.tr-comment{
+    margin-top: 0px;
+    font-size: 10px;
+}
+.ch-l .ch-info{ text-align: left;}
+.ch-r .ch-info{ text-align: right;}
+
+/*----*/
+.ch-lv{
+    text-align: center;
+    border: 1px solid #d68;
+    background-color: #fee;
+}
+.ch-lv-lv{
+    font-size: 0px;
+    width: 176px;
+    display: inline-block;
+}
+.ch-lv-lv img{
+    max-width: 100px;
+    margin: 0px;
+}
+.ch-lv-hr{
+    border: 1px dashed #d68;
+    width: 340px;
+}
+.ch-lv-quote{ margin-bottom: -46px;}
+.ch-lv-quote p{
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    width: 160px;
+    margin: 12px auto 0px;
+    padding: 2px 0px;
+}
+.ch-lv-quote:after{
+    font-size: 46px;
+    content: "▾";
+    color: #fff;
+    position: relative;
+    top: -32px;
+    z-index: 1;
+    text-shadow: 0px 2px #ddd;
+}
+.ch-lv-name{
+    font-size: 14px;
+    margin: 0px 0px 6px;
+}
+.ch-lv-hearts{ font-size: 10px; color: #d68;}
