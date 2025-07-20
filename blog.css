@@ -24,6 +24,17 @@ hr{
     margin: 16px auto;
 }
 
+aside{
+    background-color: #fff;
+    box-shadow: 0px 0px 2px #00101088;
+    border-radius: 0px 8px 8px 0px;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    position: fixed;
+    overflow-y: auto;
+}
+
 footer{
     font-size: 12px;
     color: #888;
@@ -97,7 +108,7 @@ img{
     padding: 0px 6px;
 }
 #pinned::before{
-    content: "- pinned -";
+    content: "- 📌 -";
     font-family: "LXGW Marker Gothic", Verdana, Tahoma, sans-serif, system-ui;
     font-size: 16px;
     font-weight: bold;
@@ -157,6 +168,10 @@ span.scyn{ color: #1ac}
     .fl{ left: 16px;}
     .fr{ left: -16px;}
     #pinned::after{ left: -120px;}
+}
+
+@media screen and (max-width:720px){
+    aside{ display: none;}
 }
 
 /* tablet & pc */
