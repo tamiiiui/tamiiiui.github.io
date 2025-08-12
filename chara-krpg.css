@@ -15,7 +15,7 @@
     font-size: 32px;
     color: #444;
     font-style: italic;
-    width: fit-content;
+    width: inherit;
     padding: 0px 12px;
 }
 
@@ -188,3 +188,4 @@ p.tr-comment{
 }
 
 .ch-lv-hearts{ font-size: 10px; color: #d68;}
+
