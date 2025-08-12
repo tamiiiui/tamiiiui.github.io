@@ -141,9 +141,10 @@ img{
     font-size: 0px;
     text-align: right;
 }
-.tags span{
+.tags span, .tags a{
     background-color: #fff;
     font-size: 12px;
+    font-weight: normal;
     margin: 8px 4px;
     padding: 2px 4px;
     border-radius: 4px;
@@ -152,6 +153,12 @@ img{
     width: fit-content;
     color: #888;
 }
+.tags a:hover{ filter: brightness(0.75);}
+
+.ared:link, .ared:visited{ color: #c21;}
+.acyn:link, .acyn:visited{ color: #1ac;}
+.apnk1:link, .apnk1:visited{ color: #c16;}
+.ablk:link, .ablk:visited{ color: #222;}
 
 /* -------------------- COLR -------------------- */
 span.sbld{ font-weight: bold;}
@@ -179,3 +186,4 @@ span.scyn{ color: #1ac}
     img{ max-width: 500px;}
     .post, .tags{ max-width: 500px;}
 }
+
