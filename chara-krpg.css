@@ -34,7 +34,7 @@
 }
 .ch-table div{ display: inline-block;}
 
-.ch-a, .ch-b{
+.ch-a, .ch-b, .ex-a, .ex-b{
     margin: 1px 0px;
     padding: 0px 0px 2px;
     width: 260px;
@@ -42,6 +42,8 @@
 }
 .ch-a{ background-color: #eed;}
 .ch-b{ background-color: #ddc;}
+.ex-a{ background-color: #dee;}
+.ex-b{ background-color: #cdd;}
 
 .ch-tl, .ch-tr{ font-size: 14px;}
 .ch-tl{
@@ -103,6 +105,10 @@
 .btn-lv{
     background-color: #d68;
     border-top: 3px dashed #b24;
+}
+.btn-ex{
+    background-color: #0ac;
+    border-top: 3px dashed #067;
 }
 .btn-l{ margin-left: 4px;}
 .btn-r{ margin-right: 4px;}
@@ -180,4 +186,5 @@ p.tr-comment{
     font-size: 14px;
     margin: 0px 0px 6px;
 }
+
 .ch-lv-hearts{ font-size: 10px; color: #d68;}
