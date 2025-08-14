@@ -34,16 +34,18 @@
 }
 .ch-table div{ display: inline-block;}
 
-.ch-a, .ch-b, .ex-a, .ex-b{
+.ch-a, .ch-b, .ex-a, .ex-b, .n-a, .n-b{
     margin: 1px 0px;
     padding: 0px 0px 2px;
-    width: 260px;
+    width: inherit;
     border-radius: 4px;
 }
 .ch-a{ background-color: #eed;}
 .ch-b{ background-color: #ddc;}
 .ex-a{ background-color: #dee;}
 .ex-b{ background-color: #cdd;}
+.n-a{ background-color: #eee;}
+.n-b{background-color: #ddd;}
 
 .ch-tl, .ch-tr{ font-size: 14px;}
 .ch-tl{
@@ -74,7 +76,7 @@
     width: 360px;
     margin-top: 8px;
 }
-.ch-desc p{ margin: 6px 8px;}
+.ch-desc p{ margin: 16px 8px 14px;}
 
 /* -------------------- BTNS -------------------- */
 .ch-buttons{
@@ -186,6 +188,4 @@ p.tr-comment{
     font-size: 14px;
     margin: 0px 0px 6px;
 }
-
 .ch-lv-hearts{ font-size: 10px; color: #d68;}
-
