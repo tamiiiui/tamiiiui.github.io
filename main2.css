@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: tahoma, sans-serif;
+    font-size: 14px;
+}
+
+a:link{ color: #0ab;}
+a:visited{ color: #888;}
+
+h1, p{ margin: 12px 24px 2px;}
+h1{
+    font-family: 'Mochiy Pop One', tahoma, sans-serif;
+    border-left: 5px dashed #888;
+    margin-left: 22px;
+    padding-left: 20px;
+}
+h3{
+    font-family: 'Mochiy Pop One', tahoma, sans-serif;
+    border-left: 3px dashed #888;
+    margin-left: 22px;
+    margin-top: 24px;
+    padding-left: 12px;
+}
+
+hr{
+    margin: 8px 20px;
+    max-width: 680px;
+    border: 1px solid #ccc
+}
+.hred:link, .hred:visited{ background-color: #a10;}
+.horg:link, .horg:visited{ background-color: #b60;}
+.hylw:link, .hylw:visited{ background-color: #bb0;}
+.hlim:link, .hlim:visited{ background-color: #4a0;}
+.hcyn:link, .hcyn:visited{ background-color: #0ac;}
+a:hover{ filter: brightness(0.5) saturate(2);}
+#here{
+    background-color: #fff;
+    text-shadow: -1px 0px #fff, 0px -1px #fff, 0px 1px #fff, 1px 0px #fff;
+}
+
+img {
+    max-width: 100%;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+header{ z-index: 1;}
+header img{
+    position: relative;
+    top: 40px;
+}
+header nav {
+    font-family: "Sour Gummy", helvetica, sans-serif;
+    font-size: 0px;
+    text-decoration: none;
+    
+    max-width: 720px;
+    height: 40px;
+    align-content: end;
+}
+header nav a {
+    background: #a20;
+    background-image: url(./shioritori/img/bmp.png);
+    background-blend-mode: multiply;
+    background-size: 4px;
+    border: 0px solid #fff;
+    box-shadow: 0px 0px 1px #00101088;
+    border-radius: 8px 8px 0px 0px;
+    color: #eee;
+    
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transform: scaleY(1.1);
+    
+    width: 128px;
+    display: inline-block;
+    padding-top: 3px;
+    margin: 0px 2px;
+}
+header nav a:link, header nav a:visited{ color:#eee}
+
+footer{
+    background-color: #eee;
+    color: #888;
+    font-family: "Zen Kaku Gothic New", tahoma, sans-serif;
+    font-size: 12px;
+
+    margin-top: 64px;
+    padding: 10px 0px 192px;
+}
+footer a{
+    font-weight: bold;
+    width: 60px;
+    height: 16px;
+    display: inline-block;
+}
+footer p{ height: 16px;}
+
+/*--------------------------------  main  --------------------------------*/
+.main{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    box-shadow: 0px 0px 1px #00101088;
+    color: #444;
+    font-family: "Zen Kaku Gothic New", tahoma, sans-serif;
+    text-align: left;
+    
+    max-width: 680px;
+    min-height: 400px;
+    margin: 0px 4px 16px;
+    padding-bottom: 32px;
+}
+
+.main h1{ margin-top: 64px;}
+
+/*-------------------------------- screen --------------------------------*/
+@media screen and (max-width: 660px){
+    header nav{ height: 80px;}
+    header img{ top: 80px;}
+    hr{ max-width: 90%;}
+}

@@ -1,0 +1,11 @@
+.main{
+    border: 2px solid #b60;
+    border-bottom: 4px solid #b60;
+}
+#here{ color: #b60;}
+h3{ border-left: 3px dashed #a60;}
+hr{ border: 1px dashed #a60;}
+
+/*-------------------------------- screen --------------------------------*/
+@media screen and (max-width: 660px){
+}
