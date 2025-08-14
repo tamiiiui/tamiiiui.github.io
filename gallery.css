@@ -6,6 +6,28 @@
 h3{ border-left: 3px dashed #a90;}
 hr{ border: 1px dashed #a90;}
 
+.mydiv{
+    width: inherit;
+    margin: 12px 20px;
+    font-size: 0px;
+}
+
+.thumb{
+    width: 160px;
+    margin: 4px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+.thumb img{
+    width: inherit;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #00101088;
+}
+
 /*-------------------------------- screen --------------------------------*/
 @media screen and (max-width: 660px){
+    .mydiv{
+        text-align: center;
+    }
 }
