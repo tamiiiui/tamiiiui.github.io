@@ -6,6 +6,30 @@
 h3{ border-left: 3px dashed #a60;}
 hr{ border: 1px dashed #a60;}
 
-/*-------------------------------- screen --------------------------------*/
-@media screen and (max-width: 660px){
+.mydiv{
+    width: inherit;
+    margin: 12px 20px;
+    font-size: 0px;
+}
+
+.chara{
+    width: 100px;
+    margin: 4px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #eee;
+}
+.chara img{
+    width: inherit;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px #00101088;
+}
+.chara span{
+    color: #444;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
 }
