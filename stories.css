@@ -1,0 +1,7 @@
+.main{
+    border: 2px solid #a10;
+    border-bottom: 4px solid #a10;
+}
+#here{ color: #a10;}
+h3{ border-left: 3px dashed #b10;}
+hr{ border: 1px dashed #b10;}
