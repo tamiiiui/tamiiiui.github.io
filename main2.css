@@ -53,23 +53,23 @@ header img{
     position: relative;
     top: 40px;
 }
-header nav {
+header nav{
     font-family: "Sour Gummy", helvetica, sans-serif;
     font-size: 0px;
     text-decoration: none;
     
     max-width: 720px;
     height: 40px;
-    align-content: end;
+    align-content: baseline;
 }
-header nav a {
+header nav a{
     background: #a20;
     background-image: url(./shioritori/img/bmp.png);
     background-blend-mode: multiply;
     background-size: 4px;
     border: 0px solid #fff;
-    box-shadow: 0px 0px 1px #00101088;
-    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 1px 1px #00101088;
+    border-radius: 0px 0px 8px 8px;
     color: #eee;
     
     font-size: 18px;
