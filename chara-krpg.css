@@ -17,6 +17,7 @@
 .ch-r{ margin-left: auto; text-align: left;}
 .ch-r.ch-big{ left: -16px;}
 .ch-mainimg{
+    width: 340px;
     position: relative;
     top: -32px;
 }
@@ -213,3 +214,4 @@ p.tr-comment{
     .ch-quote:after{ left: -320px;}
     .ch-r.ch-big{ left: 0px;}
 }
+
