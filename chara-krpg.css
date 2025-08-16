@@ -3,12 +3,23 @@
     font-family: "Zen Kaku Gothic New", Verdana, Tahoma, sans-serif, system-ui;
     font-size: 0px;
     margin: 64px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.ch-big, .ch-sml{ display: inline-block;}
-.ch-big{ width: 362px;}
-.ch-sml{ width: 340px;}
+.ch-big, .ch-sml{
+    display: inline-block;
+    position: relative;
+}
+.ch-big{ width: 362px; margin-top: 56px;}
+.ch-sml{ width: 340px; margin-top: 16px;}
 .ch-l{ margin-right: auto; text-align: right;}
 .ch-r{ margin-left: auto; text-align: left;}
+.ch-r.ch-big{ left: -16px;}
+.ch-mainimg{
+    position: relative;
+    top: -32px;
+}
 
 /* -------------------- QUOT -------------------- */
 .ch-quote{
@@ -16,9 +27,12 @@
     color: #444;
     font-style: italic;
     width: inherit;
-    padding: 0px 12px;
 }
-
+.ch-quote p{
+    padding: 4px 8px;
+    background-color: #ddd;
+    border-radius: 8px;
+}
 /* -------------------- CLRS -------------------- */
 .qred{ color: #c21;}
 /*.qred{ border-bottom: 2px dashed #c21;}*/
@@ -32,6 +46,7 @@
     vertical-align: bottom;
     margin-top: 8px;
 }
+.ch-table.ex{ margin-top: 0px;}
 .ch-table div{ display: inline-block;}
 
 .ch-a, .ch-b, .ex-a, .ex-b, .n-a, .n-b{
@@ -189,3 +204,12 @@ p.tr-comment{
     margin: 0px 0px 6px;
 }
 .ch-lv-hearts{ font-size: 10px; color: #d68;}
+
+/*-------------------------------- screen --------------------------------*/
+/* phone */
+@media screen and (max-width:720px){
+    .ch-sml, .ch-big{ margin-left: auto; margin-right: auto;}
+    .ch-big{ margin-top: 0px;}
+    .ch-quote:after{ left: -320px;}
+    .ch-r.ch-big{ left: 0px;}
+}
