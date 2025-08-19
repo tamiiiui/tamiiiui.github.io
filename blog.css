@@ -92,7 +92,6 @@ img{
     padding-top: 8px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: tahoma, sans-serif, system-ui;
 }
 #pinned{
     background-image: url(./blog/img/blog-pin.png);
@@ -186,4 +185,5 @@ span.scyn{ color: #1ac}
     img{ max-width: 500px;}
     .post, .tags{ max-width: 500px;}
 }
+
 
