@@ -155,6 +155,7 @@ img{
 .tags a:hover{ filter: brightness(0.75);}
 
 .ared:link, .ared:visited{ color: #c21;}
+.aylw:link, .aylw:visited{ color: #cb1;}
 .acyn:link, .acyn:visited{ color: #1ac;}
 .apnk1:link, .apnk1:visited{ color: #c16;}
 .ablk:link, .ablk:visited{ color: #222;}
@@ -185,5 +186,6 @@ span.scyn{ color: #1ac}
     img{ max-width: 500px;}
     .post, .tags{ max-width: 500px;}
 }
+
 
 
