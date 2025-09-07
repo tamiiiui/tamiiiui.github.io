@@ -1,0 +1,297 @@
+.ch{
+    max-width: 800px;
+    font-family: "Zen Kaku Gothic New", Verdana, Tahoma, sans-serif, system-ui;
+    font-size: 0px;
+    margin: 64px 0px 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ddd;
+
+    border-radius: 32px;
+}
+.ch-big, .ch-sml{
+    display: inline-block;
+    position: relative;
+}
+.ch-big{
+    width: 362px;
+    background-color: #fff;
+    padding: 0px 12px;
+}
+.ch-sml{ width: 340px;}
+.ch-tab{
+    width: inherit;
+    display: flex;
+    margin-top: 0px;
+    align-items: end;
+}
+.ch-mainimg{
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
+
+/* -------------------- QUOT -------------------- */
+.ch-quote{
+    font-size: 16px;
+    background-color: #fff;
+    color: #404040;
+    font-style: italic;
+    width: inherit;
+    border: 3px dotted #c8c8b8;
+    border-radius: 16px;
+    padding: 4px 8px;
+    text-align: left;
+}
+/* -------------------- CLRS -------------------- */
+.qred{ color: #c21;}
+/*.qred{ border-bottom: 2px dashed #c21;}*/
+
+/* -------------------- TABL -------------------- */
+.ch-title{
+    background-color: #fff;
+    border-radius: 6px;
+    mix-blend-mode: multiply;
+    position: relative;
+    top: 68px;
+    
+    color: #242424;
+    text-shadow: 2px 3px #c8c8b8;
+    border-top: 6px solid #c8c8b8;
+    text-align: right;
+}
+.ch-title span{
+    background-color: #fff;
+    font-size: 56px;
+    font-family: 'Cherry Bomb One';
+    /*Rum Raisin, McLaren, Joti One */
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0px 8px;
+    padding: 0px 6px 0px 4px;
+    position: relative;
+    top: -60px;
+    z-index: 1;
+}
+
+.ch-table{
+    font-size: 0px;
+    width: 260px;
+    color: #404040;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 8px;
+}
+.ch-table.ex{ margin-top: 0px;}
+.ch-table div{ display: inline-block;}
+
+.ch-a, .ch-b, .ex-a, .ex-b, .n-a, .n-b{
+    margin: 1px 0px;
+    padding: 1px 0px 2px;
+    width: inherit;
+    border-radius: 6px;
+    background-image: url(./shioritori/img/bg_diag_light_32.png);
+    background-blend-mode: multiply;
+    background-size: 8px;
+}
+.ch-a{ background-color: #f4f4e8;}
+.ch-b{ background-color: #d8d8c8;}
+.ex-a{ background-color: #e0f4f4;}
+.ex-b{ background-color: #b0d8e0;}
+.n-a{ background-color: #f0f0f0;}
+.n-b{background-color: #d0d0d0;}
+
+.ch-tl, .ch-tr{ font-size: 14px;}
+.ch-tl{
+    font-weight: bold;
+    width: 68px;
+    padding-left: 6px;
+    text-align: left;
+}
+.ch-tr{
+    width: 180px;
+    padding-right: 6px;
+    text-align: right;
+}
+.ch-tr span{
+    width: fit-content;
+    border-bottom: 1px solid #0004;
+    padding: 0px 1px;
+}
+
+.ch-mini{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    vertical-align: bottom;
+    position: relative;
+}
+/* -------------------- DESC -------------------- */
+.ch-desc{
+    color: #404040;
+    background-color: #fff;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid #c8c8b8;
+    border-radius: 2px;
+
+    width: inherit;
+    margin-top: 8px;
+    padding-bottom: 16px;
+}
+.ch-desc p{ margin: 16px 8px 2px;}
+
+/* -------------------- BTNS -------------------- */
+.ch-buttons{
+    width: inherit;
+    font-size: 0px;
+    margin-top: 32px;
+    text-align: left;
+}
+.ch-btn{
+    border: none;
+    color: #f8f8f8;
+    font-family: "Zen Kaku Gothic New", Verdana, Tahoma, sans-serif, system-ui;
+    font-size: 16px;
+    font-weight: bold;
+
+    display: inline-block;
+    padding: 1px 8px 2px;
+    z-index: 1;
+}
+.ch-btn-only{ border-radius: 12px 12px 0px 0px; margin: 0px 8px;}
+.ch-btn-l{ border-radius: 12px 0px 0px 0px; margin-left: 8px;}
+.ch-btn-r{ border-radius: 0px 12px 0px 0px; margin-right: 8px;}
+.ch-btn:hover{
+    filter: brightness(0.5) saturate(2);
+    cursor: pointer;
+}
+.btn-triv{
+    background-color: #cb0;
+    border-left: 6px ridge #cb0;
+}
+.btn-lv{
+    background-color: #d68;
+    border-left: 6px ridge #d68;
+}
+.btn-ex{
+    background-color: #0ac;
+    border-left: 6px ridge #0ac;
+    /* #0ac */
+}
+.btn-l{ margin-left: 4px;}
+.btn-r{ margin-right: 4px;}
+
+.ch-btn-d{
+    border-radius: 8px;
+    font-size: 14px;
+    width: inherit;
+    color: #404040;
+
+    display: none;
+    margin-bottom: 16px;
+}
+
+/*----*/
+.ch-ex{
+    width: fit-content;
+    margin-right: 64px;
+    border-top: 2px solid #a0ccd4;
+    border-left: 2px solid #a0ccd4;
+    border-right: 4px solid #a0ccd4;
+    border-bottom: 4px solid #a0ccd4;
+    /* #d4ecec, #a0ccd4*/
+    background-color: #fff;
+}
+.ch-ex .ch-table{ margin: 4px;}
+/*----*/
+.ch-trivia{
+    text-align: center;
+    border-top: 2px solid #c8c8a8;
+    border-left: 3px solid #c8c8a8;
+    border-right: 3px solid #c8c8a8;
+    border-bottom: 4px solid #c8c8a8;
+    background-color: #fffff4;
+}
+.ch-trivia p{ margin: 6px 8px;}
+.ch-trivia img{
+    max-width: 320px;
+    mix-blend-mode: multiply;
+    margin-bottom: 2px;
+}
+
+p.tr-comment{
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+/*----*/
+.ch-lv{
+    text-align: center;
+    border-top: 2px solid #d8a8a8;
+    border-left: 4px solid #d8a8a8;
+    border-right: 2px solid #d8a8a8;
+    border-bottom: 4px solid #d8a8a8;
+    background-color: #fff8f8;
+}
+.ch-lv-lv{
+    font-size: 0px;
+    width: 176px;
+    display: inline-block;
+}
+.ch-lv-lv img{
+    max-width: 100px;
+    margin: 0px;
+}
+.ch-lv-hr{
+    border: 1px dashed #d68;
+    width: 340px;
+}
+.ch-lv-quote{ margin-bottom: -46px;}
+.ch-lv-quote p{
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    width: 160px;
+    margin: 12px auto 0px;
+    padding: 2px 0px;
+}
+.ch-lv-quote:after{
+    font-size: 46px;
+    content: "▾";
+    color: #fff;
+    position: relative;
+    top: -32px;
+    z-index: 1;
+    text-shadow: 0px 2px #ddd;
+}
+.ch-lv-name{
+    font-size: 14px;
+    margin: 0px 0px 6px;
+}
+.ch-lv-hearts{ font-size: 10px; color: #d68;}
+
+/* --------------------  REV -------------------- */
+.ch-rev{ flex-direction: row-reverse;}
+.ch-rev .ch-title{ text-align: right;}
+.ch-rev .ch-tab{ flex-direction: row-reverse;}
+
+/*-------------------------------- screen --------------------------------*/
+/* phone */
+@media screen and (max-width: 720px){
+    .ch{
+        border-left: none;
+        border-right: none;
+    }
+    .ch-sml, .ch-big{ margin-left: auto; margin-right: auto;}
+    .ch-mainimg{
+        position: relative;
+        margin: 20px 0px;
+    }
+    .ch-sml{ margin-top: 20px;}
+    .ch-big{ border-radius: 32px 32px 0px 0px;}
+    .ch-quote:after{ left: -320px;}
+}
