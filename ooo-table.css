@@ -1,0 +1,30 @@
+
+.ooo-table{
+    font-size: 0px;
+    width: 304px;
+    color: #404040;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.ooo-table div{ display: inline-block;}
+
+.ooo-row{
+    margin: 4px 0px;
+    width: inherit;
+}
+
+.ooo-tl, .ooo-tr{ font-size: 14px;}
+.ooo-tl{
+    font-weight: bold;
+    width: 98px;
+    text-align: left;
+}
+.ooo-tr{
+    width: 204px;
+    text-align: left;
+}
+.ooo-tr span{
+    width: fit-content;
+    border-bottom: 1px solid #0004;
+    padding: 0px 1px;
+}
