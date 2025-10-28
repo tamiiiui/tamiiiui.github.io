@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>?</title>
+        <link rel="icon" type="image/x-icon" href="./img/__.png">
+        <link rel="stylesheet" type="text/css" media="all" href="../chara.css" >
+        <link rel="stylesheet" type="text/css" media="all" href="../ooo-table.css" >
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+            <!--------------------------------  ▼  navig ▼  -------------------------------->
+            <div class="back">
+                <div class="back-bg"></div>
+                <a href="../characters.html"> &hookleftarrow; return</a>
+            </div>
+            <!--------------------------------  ▼ charac ▼  -------------------------------->
+            <!------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------>
+            <div id="rinka" class="ch">
+                <!-------------------------------  quote ----------------------------------->
+                <div class="ch-sml">
+                    <img class="ch-mainimg" src="____">
+                </div>
+                <div class="ch-big">
+                    <div class="ch-info">
+                        <!---------------------------  name  ------------------------------->
+                        <div style="border-top: 4px solid #0002;" class="ch-name">
+                            <span class="ch-name-decor">
+                                <span style="color: #888;">◆</span>
+                                <span style="color: #aaa;">◆</span>
+                                <span style="color: #ccc;">◆</span>
+                            </span>
+                            <span style="text-shadow: 2px 2px #ccc;" class="ch-name-name">
+                                ____
+                            </span>
+                        </div>
+                        <!---------------------------  title ------------------------------->
+                        <div class="ch-title">
+                            <p>____</p>
+                        </div>
+                        <div style="background-image: url(../shioritori/img/bg_bigdiag_light_128.png),
+                                    linear-gradient(#ddd, #eee);" class="ch-quote">
+                            <p>
+                                ____
+                            </p>
+                            <small class="ch-quote-s">- ____</small>
+                        </div>
+                        <div class="ch-tab">
+                            <!-----------------------  table ------------------------------->
+                            <div class="ooo-table" style="margin-top: 8px;">
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">name</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">species</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">pronouns</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                            </div>
+                            <!-----------------------  extra ------------------------------->
+                            <button style="background-color: #ccc;" class="collapsible ch-btn">+</button>
+                            <div class="ooo-table" style="display: none;">
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">gender</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">age</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">birthday</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">sexuality</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">year created</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                            </div>
+                            <!----------------------- appear ------------------------------->
+                            <div class="ooo-table">
+                                <div class="ooo-row">
+                                    <div class="ooo-tl">appearences</div>
+                                    <div class="ooo-tr"><span>____</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------------  desc  ----------------------------------->
+                    <div class="ch-desc">
+                        <p>____
+                        </p>
+                        <p><small><i>
+                            ____
+                        </i></small></p>
+                        <div style="border-left: 4px solid #0002;" class="ch-desc ch-desc-2">
+                            <p><i>____</i></p>
+                            <small class="ch-desc-quote">- ____</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------  ▼ charac ▼  -------------------------------->
+            <!------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------>
+
+        </center>
+        <footer>
+            <div class="crunch-bottom"></div>
+            <p>© 2025 tamiiiui</p>
+        </footer>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    this.style.display = "none"
+                    this.nextElementSibling.style.display = "block";
+                });
+            }
+        </script>
+    </body>
+</html>
