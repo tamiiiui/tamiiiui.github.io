@@ -1,8 +1,7 @@
 
 .ooo-table{
     font-size: 0px;
-    width: 304px;
-    color: #404040;
+    width: 320px;
     display: inline-block;
     vertical-align: bottom;
 }
@@ -15,16 +14,15 @@
 
 .ooo-tl, .ooo-tr{ font-size: 14px;}
 .ooo-tl{
-    font-weight: bold;
+    color: #808080;
     width: 98px;
     text-align: left;
 }
 .ooo-tr{
-    width: 204px;
+    width: 220px;
     text-align: left;
 }
 .ooo-tr span{
     width: fit-content;
-    border-bottom: 1px solid #0004;
     padding: 0px 1px;
 }
