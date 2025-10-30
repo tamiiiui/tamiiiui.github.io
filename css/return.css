@@ -1,0 +1,41 @@
+.return-bg, .return{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.return a{
+    font-family: "nagino", Tahoma, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ddd;
+    position: fixed;
+    top: 8px;
+    left: 16px; 
+    z-index: 4;
+}
+.return-bg{
+    width: 256px;
+    height: 64px;
+    background-color: #000;
+    border: 2px solid #e0e8f0;
+    box-sizing: content-box;
+    position: fixed;
+    top: -48px;
+    left: -16px;
+    transform: rotate(165deg);
+    z-index: 3;
+}
+
+.crunch{
+    width: 100%;
+    height: 24px;
+    position: relative;
+    top: -18px;
+
+    background-image: url("./shioritori/img/bg_side_tall_128.png");
+    background-repeat: repeat-x;
+    background-size: 24px;
+    background-position-x: right;
+    
+    z-index: 4;
+}
