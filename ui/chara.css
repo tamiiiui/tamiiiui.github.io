@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+a:hover{ filter: brightness(0.5) saturate(2);}
 body{
     font-size: 0px;
     background-size: cover;
@@ -224,3 +225,4 @@ div { box-sizing: border-box;}
         min-height: inherit;
     }
 }
+
