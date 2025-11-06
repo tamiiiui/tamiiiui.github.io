@@ -161,6 +161,10 @@ img {
     border-bottom: none;
     border-radius: 0px 0px 8px 8px;
 }
+.side-nav .blog{
+    font-size: 16px;
+    font-family: "pixel", Tahoma, sans-serif;
+}
 .side-nav a:hover{ background-color: #0006;}
 
 .side-links a{ display: block;}
