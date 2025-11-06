@@ -119,7 +119,7 @@ img {
     border-radius: 12px;
 }
 .side-desc{
-    background-image: url(../../tamiiiui.github.io2/shioritori/img/bg_bigdiag_dark_128.png);
+    background-image: url(./meta/bg_bigdiag_dark_128.png);
     background-size: 16px;
 
     width: inherit;
