@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+a:link{ color: #b02000;}
+a:hover{ filter: brightness(0.5) saturate(2);}
+a:visited{ color: #606060;}
+body{
+    background-color: #fff;
+    color: #000;
+    font-family: "pixel", Tahoma, sans-serif;
+    font-size: 0px;
+    text-align: center;
+}
+br{ margin: 32px;}
+footer{
+    font-size: 16px;
+    margin: 92px 0px 12px;
+}
+header{
+    font-size: 16px;
+    margin: 12px 0px 92px;
+}
+img{
+    display: inline-block;
+    max-width: inherit;
+}
+p{
+    font-size: 16px;
+    margin: 12px 0px 8px;
+}
+.page{ max-width: 600px;}
+.foot-frame-b{
+    border: none;
+    width: 200px;
+    height: 20px;
+}
+@media screen and (max-width:600px){
+    .page, header, footer{ max-width: 100%;}
+}
