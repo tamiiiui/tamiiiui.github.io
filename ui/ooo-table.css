@@ -17,12 +17,21 @@
     color: #808080;
     width: 98px;
     text-align: left;
+    border-right: 1px solid #d0d0d0;
 }
 .ooo-tr{
-    width: 220px;
+    width: 212px;
     text-align: left;
+    margin-left: 8px;
 }
 .ooo-tr span{
     width: fit-content;
     padding: 0px 1px;
+}
+/* --------------------  big -------------------- */
+@media screen and (min-width: 520px){
+    .ooo-big{ width: 420px;}
+    .ooo-big .ooo-tr{ width: 312px;}
+    .ooo-bigger{ width: 520px;}
+    .ooo-bigger .ooo-tr{ width: 412px;}
 }
