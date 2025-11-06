@@ -1,0 +1,201 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a:hover{ filter: brightness(0.5) saturate(2);}
+a:link{ color: #a02020;}
+a:visited{ color: #8a8c90;}
+
+body{
+    background-color: #fff;
+    color: #202020;
+    font-size: 0px;
+    font-family: "nagino", Tahoma, sans-serif;
+}
+header{ display: none;}
+footer{
+    width: 100%;
+    font-size: 12px;
+    background-color: #000;
+    height: fit-content;
+    text-align: center;
+
+    margin-top: 64px;
+
+    padding: 16px 0px 32px;
+    border-top: 4px double #fff;
+    z-index: 3;
+}
+.foot{
+    width: 400px;
+    background-color: #000;
+    color: #e8eaec;
+    font-size: 12px;
+    padding: 0px 0px 64px;
+    text-align: center;
+}
+.foot-frame{
+    border: none;
+    width: 400px;
+    height: 32px;
+}
+
+p{ margin: 16px 24px 2px;}
+h1{
+    font-family: "track", Tahoma, sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px #acaeb0;
+    margin: 12px 8px 0px;
+}
+h2{
+    font-family: "track", Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 12px 8px 0px;
+    padding: 0px 6px;
+    color: #acaeb0;
+    border-left: 8px solid #acaeb0;
+}
+h3{
+    font-family: "track", Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 12px 8px 0px;
+    padding: 0px 14px;
+    color: #acaeb0;
+    border-bottom: 10px solid #acaeb0;
+}
+h3 span{
+    background-color: #fff;
+    padding: 2px;
+    position: relative;
+    top: 12px;
+}
+hr{
+    margin: 12px 8px 0px;
+    border: none;
+    border-bottom: 3px solid #acaeb0;
+}
+.hr-2{ margin-top: 3px;}
+a:hover{ filter: brightness(0.5) saturate(2);}
+#here{
+    background-color: #fff;
+    text-shadow: -1px 0px #fff, 0px -1px #fff, 0px 1px #fff, 1px 0px #fff;
+}
+
+img {
+    max-width: 100%;
+    margin: 0px auto;
+    display: inline-block;
+}
+.ooo-table{ margin: 12px 24px 0px;}
+
+.mydiv{
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+/*--------------------------------  side  --------------------------------*/
+.side{
+    width: 180px;
+    height: 720px;
+    text-align: center;
+    display: inline-block;
+    background-color: inherit;
+}
+.side-frame{
+    border: none;
+    width: 180px;
+    height: 720px;
+}
+
+.side-img{
+    width: inherit;
+    margin: 8px 0px 0px;
+    border: 0px solid #000;
+    border-radius: 12px;
+}
+.side-desc{
+    background-image: url(../../tamiiiui.github.io2/shioritori/img/bg_bigdiag_dark_128.png);
+    background-size: 16px;
+
+    width: inherit;
+    font-family: "track", Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: rgb(60,60,60);
+    /* rgb(70, 56, 52) */
+    box-shadow: 0px 2px #acaeb0;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0px 0px 2px;
+    display: inline-block;
+    margin: 16px 0px 2px;
+    border: 0px solid #202020;
+}
+.side-desc.first{ margin-top: 10px;}
+
+/* --------------------  NAV -------------------- */
+.side-nav{
+    width: 164px;
+    margin: 0px 8px;
+}
+.side-nav a{
+    display: block;
+    color: #202020;
+    background-color: rgb(248, 246, 244);
+    font-family: "nagino", Tahoma, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    width: inherit;
+    padding: 4px 8px;
+    text-align: left;
+
+    box-sizing: border-box;
+    border-radius: 0px;
+    border-bottom: 1px solid #acaeb0;
+}
+.side-nav .last{
+    border-bottom: none;
+    border-radius: 0px 0px 8px 8px;
+}
+.side-nav a:hover{ background-color: #0006;}
+
+.side-links a{ display: block;}
+.side-links img{ border-radius: 8px;}
+
+/*--------------------------------  main  --------------------------------*/
+.main{
+    width: 700px;
+    margin: 12px 0px 32px;
+    display: inline-block;
+    border-left: 1px solid #acaeb0;
+}
+.main-content{
+    background-color: #fff;
+
+    font-family: inherit;
+    font-size: 14px;
+    text-align: left;
+    
+    width: inherit;
+    min-height: 400px;
+    box-sizing: border-box;
+
+    flex: auto;
+    margin: 0 auto;
+    position: relative;
+    top:-20px;
+    left: 4px;
+    z-index: 2px;
+}
+
+/*-------------------------------- screen --------------------------------*/
+.x{ display: none;}
+
+@media screen and (max-width: 920px){
+    .mydiv{ width: 800px;}
+    .main{ width: 600px;}
+}
