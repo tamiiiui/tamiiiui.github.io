@@ -24,6 +24,7 @@ header{
     width: 600px;
     padding: 20px 0px 114px;
 }
+.noupdate{ padding-bottom: 26px;}
 header p{ margin: 0px 0px;}
 footer p{ margin: 0px 8px 16px;}
 img{
