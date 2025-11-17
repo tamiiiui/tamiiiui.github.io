@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>?</title>
+        <title>（ 'ヮ' ）</title>
         <link rel="icon" type="image/x-icon" href="________">
         <link rel="stylesheet" type="text/css" media="all" href="./ui/font.css" >
         <link rel="stylesheet" type="text/css" media="all" href="./ui/ooo-table.css" >
         <link rel="stylesheet" type="text/css" media="all" href="./ui/main.css" >
+        <link rel="stylesheet" type="text/css" media="all" href="./ui/illust.css" >
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <style>
-        .pfp{
-            width: 100px;
-            border: 2px solid #acacb0;
-            border-radius: 4px;
-            margin: 24px 16px 0px;
-        }
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>         
+            #fc-001 img{ border: 1px solid #04e;}
         </style>
     </head>
     <body>
-        <header>
-            <img src="./ui/meta/header.png">
-        </header>
         <center>
             <div class="mydiv">
                 <!--------------------------------  ▼ main ▼  -------------------------------->
                 <iframe class="side-frame" title="sidebar" scrolling="no" src="./sidebar.html"></iframe>
                 <div class="main">
+                    <div class="sepparate"></div>
                     <div class="main-content">
                         <h1>illustrations</h1>
-                        <hr class="hr-2">
-                        <h2 style="margin-top: 24px;">log</h2>
+                        <p>[ new &rarr; old ]</p>
+                        <h2><span>scrap log</span></h2>
                         <p>
-                            <a href="./illust/blog.html">doodle blog</a>
+                            <a href="./illust/log.html">doodle</a>
                         </p>
-                        <h2 style="margin-top: 24px;">illustrations</h2>
-                        <p>[ wip ]</p>
-                        <h2 style="margin-top: 24px;">fanart</h2>
-                        <p>[ wip ]</p>
+                        <p>
+                            <a href="./illust/fa-log.html">FA</a> 
+                        </p>
+                        <h2><span>oc</span></h2>
+                        <h2><span>fc</span></h2>
+                        <div class="row">
+                            <img class="i-thumb" loading="lazy" src="./illust/illust/Illustration128_p.png" onclick="openillust(this.nextElementSibling)">
+                            <div id="fc-001" class="illust" onclick="closeillust(this)"><img loading="lazy" src="./illust/illust/Illustration128_.png"></div>
+                        </div>
+                        <h2><span>fa</span></h2>
                     </div>
                 </div>
             </div>
@@ -45,5 +45,13 @@
         <footer>
             <iframe class="foot-frame" title="footer" scrolling="no" src="./footer.html"></iframe>
         </footer>
+        <script>
+        function openillust(x) {
+            x.style.display = "block";
+        }
+        function closeillust(x){
+            x.style.display = "none";
+        }
+        </script>
     </body>
 </html>
