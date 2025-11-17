@@ -5,12 +5,6 @@
     font-style: normal;
 }
 @font-face {
-    font-family: "pixel";
-    src: url("./font/x12y16pxMaruMonica.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: "track";
     src: url("./font/Buildingsandundertherailwaytracksfree_ver.otf");
     font-weight: normal;
