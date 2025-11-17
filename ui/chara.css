@@ -1,58 +1,330 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>（ 'ヮ' ）</title>
-        <link rel="stylesheet" type="text/css" media="all" href="./ui/font.css" >
-        <link rel="stylesheet" type="text/css" media="all" href="./ui/ooo-table.css" >
-        <link rel="stylesheet" type="text/css" media="all" href="./ui/main.css" >
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <style>
-        .pfp{
-            width: 120px;
-            margin: 0px 24px 0px;
-        }
-        </style>
-    </head>
-    <body>
-        <center>
-            <div class="mydiv">
-                <!--------------------------------  ▼ main ▼  -------------------------------->
-                <iframe class="side-frame" title="sidebar" scrolling="no" src="./sidebar.html"></iframe>
-                <div class="main">
-                    <div class="sepparate"></div>
-                    <div class="main-content">
-                        <h1>about</h1>
-                        <img class="pfp" src="./ui/meta/about.png">
-                        <p>
-                            hellooooooo i'm tami !! （ 'ヮ' ）° i made this website to showcase
-                            my ocs and stories.
-                            im not super great at describing things, so i hope you don't mind that.
-                        </p>
-                        <p>
-                            i don't know what else to put here. （´ ∇｀''）
-                        </p>
-                        <div class="ooo-table ooo-bigger">
-                            <div class="ooo-row">
-                                <div class="ooo-tl">pronouns</div>
-                                <div class="ooo-tr">she/her</div>
-                            </div>
-                            <div class="ooo-row">
-                                <div class="ooo-tl">tools</div>
-                                <div class="ooo-tr">Ibis Paint X (mobile), Clip Studio Paint, RPG Maker MV</div>
-                            </div>
-                            <div class="ooo-row">
-                                <div class="ooo-tl">site launch</div>
-                                <div class="ooo-tr">2025/nov/05</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </center>
-            <!-------------------------------- ▲ main ▲ -------------------------------->
-        <footer>
-            <iframe class="foot-frame" title="footer" scrolling="no" src="./footer.html"></iframe>
-        </footer>
-    </body>
-</html>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --acc1: #c8c8c8;
+    --acc2: #d0d0d0;
+    --acc3: #dcdcdc;
+    --bg: #fff;
+    --title: #202020;
+    --txt: #202020;
+    --txtlt: #787878;
+    --txtshad: #00000038;
+    --btn: #c8c8c8;
+}
+body{
+    font-size: 0px;
+    background-color: #ededed;
+    background-image: url(./meta/bg_checker_light_32.png);
+    background-blend-mode: hard-light;
+    background-size: 24px;
+}
+center{ padding: 64px 0px;}
+hr{
+    width: 340px;
+    margin: 8px auto;
+    border: 1px solid var(--acc1);
+}
+footer{
+    width: 100%;
+    font-size: 12px;
+    font-family: "nagino", Tahoma, sans-serif;
+    height: fit-content;
+    background-color: #000;
+    padding: 0px 0px 64px;
+    text-align: center;
+
+    z-index: 3;
+}
+.bg{
+    backdrop-filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+}
+.body-bg{
+    background-size: cover;
+    background-repeat: space;
+    background-attachment: fixed;
+    background-blend-mode: normal;
+}
+.foot-frame{
+    border: none;
+    width: 400px;
+    height: 32px;
+}
+img{ display: inline-block;}
+p{ margin: 0px;}
+div { box-sizing: border-box;}
+a:hover{ filter: brightness(0.5) saturate(2);}
+
+/* -------------------- MAIN -------------------- */
+
+.ch{
+    max-width: 900px;
+    font-family: "nagino", Tahoma, sans-serif;
+    font-size: 0px;
+    color: var(--txt);
+    border: 1px solid #202020;
+    margin: 64px auto 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    background-color: #f5f5f5;
+
+    border-radius: 16px;
+    box-shadow: 4px 6px 1px #0001;
+    box-sizing: content-box ;
+}
+.ch-pattern, .ch-cinema{
+    width: inherit;
+    height: inherit;
+    display: inherit;
+    flex-wrap: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    background-size: 20px 40px;
+    box-sizing: border-box;
+    border-radius: inherit;
+}
+.ch-cinema{
+    background-size: contain;
+    border-radius: inherit;
+    background-repeat: repeat-x;
+}
+.ch-txt, .ch-img{
+    display: inline-block;
+    position: relative;
+}
+.ch-txt{
+    width: 360px;
+    min-height: 660px;
+    padding: 0px 8px;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+.ch-img{
+    width: 540px;
+    max-height: 660px;
+}
+.ch-mainimg{
+    max-width: inherit;
+    max-height: inherit;
+    position: relative;
+    z-index: 2;
+}
+.ch-mainimg-sticker{
+    filter: drop-shadow(-1px 0px 0px #fffc)
+            drop-shadow(0px -1px 0px #fffc)
+            drop-shadow(0px 1px 0px #fffc)
+            drop-shadow(1px 0px 0px #fffc)
+            drop-shadow(1px 1px 4px #000);
+}
+
+/* -------------------- NAME -------------------- */
+.ch-name{
+    width: 324px;
+    color: var(--title);
+    text-align: right;
+    border-top: 2px solid var(--acc1);
+    position: relative;
+    top: 74px;
+    margin: 8px 8px 0px;
+}
+.ch-name-decor{
+    font-size: 40px;
+    position: absolute;
+    transform: translate( -340px, -34px);
+    color: var(--acc1);
+    letter-spacing: -14px;
+}
+.ch-name-name{
+    width: 280px;
+    font-size: 60px;
+    font-family: "track", Tahoma, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 2px;
+    position: relative;
+    bottom: 72px;
+    z-index: 1;
+    text-shadow: 3px 3px var(--txtshad);
+}
+.ch-title{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    
+    width: 324px;
+    text-align: right;
+}
+
+/* -------------------- QUOT -------------------- */
+.ch-quote{
+    font-size: 14px;
+    font-style: italic;
+    width: 324px;
+    padding: 0px 8px;
+    text-align: left;
+    margin: 16px 0px;
+/*    box-shadow: 4px 4px #0004;*/
+    text-align: center;
+    transform: translateY( 8px);
+}
+.ch-quote::before{
+    content: "❝";
+    font-size: 64px;
+    font-family: "nagino", Tahoma, sans-serif;;
+    color: #00000024;
+    position: absolute;
+    transform: translate( -180px, -32px);
+}
+.ch-quote::after{
+    content: "❞";
+    font-size: 64px;
+    font-family: "nagino", Tahoma, sans-serif;;
+    color: #00000024;
+    position: absolute;
+    transform: translate( -28px, -44px);
+}
+.ch-quote-s{
+    font-style: normal;
+    display: inline-block;
+    width: 308px;
+    text-align: right;
+}
+
+/* -------------------- TABL -------------------- */
+.ch-tab{
+    width: 324px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    align-items: end;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--acc1);
+}
+.ch-tab.y{ border-bottom: none;}
+.ooo-table{
+    transform: translateX(6px);
+    display: inline-block;
+}
+.ooo-tl{ color: var(--txtlt);}
+.ooo-f{ margin: 0px 0px 4px}
+.ooo-flag{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 4px;
+}
+
+/* -------------------- BTNS -------------------- */
+.ch-btn{
+    border: none;
+    border-radius: 16px;
+    color: var(--bg);
+    background-color: var(--btn);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+
+    display: inline-block;
+    padding: 2px 6px;
+    position: absolute;
+    transform: translateX(298px);
+    z-index: 1;
+}
+.ch-btn:hover{
+    filter: brightness(0.5) saturate(2);
+    cursor: pointer;
+}
+.ch-btn::after{
+    content: "click";
+    font-size: 8px;
+    font-weight: normal;
+    color: var(--btn);
+    position: absolute;
+    transform: translate(-15px, -14px);
+}
+
+/* -------------------- DESC -------------------- */
+.ch-desc{
+    text-align: left;
+    font-size: 14px;
+
+    width: 328px;
+    margin: 16px 0px;
+}
+.ch-desc p{ margin: 16px 8px;}
+.ch-last{ margin-bottom: 24px;}
+
+/* -------------------- DESC -------------------- */
+.ch-link{
+    width: 324px;
+    margin: 16px 0px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0px;
+    border-top: 1px solid var(--acc1);
+    padding-top: 6px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.ch-link a{
+    width: 72px;
+    height: fit-content;
+    display: inline-block;
+    margin: 4px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: light;
+    color: inherit;
+}
+a.first{ margin-left: 1px;}
+a.last{ margin-right: 0px;}
+.ch-link img{
+    width: inherit;
+    height: 72px;
+    border: 1px solid var(--acc3);
+    border-radius: 8px;
+}
+.ch-link span{
+    display: inline-block;
+    padding: 2px 6px 0px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--acc3);
+    font-size: 12px;
+}
+
+/* --------------------      -------------------- */
+.x{ display: none;}
+
+/*-------------------------------- screen --------------------------------*/
+/* phone */
+@media screen and (min-width: 800px) and (max-width: 1280px){ /*900px*/
+    .ch{ width: 810px;}
+    .ch-txt{ min-height: 600px;}
+    .ch-img{
+        width: 450px;
+        max-height: 600px;
+    }
+}
+@media screen and (max-width: 800px){
+    .ch, .ch-img{ max-width: 380px;}
+    .ch-img{
+        max-height: fit-content;
+        margin-top: 16px;
+        top: 16px;
+    }
+    .ch-txt{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: inherit;
+        width: 380px;
+        padding: 0px 18px;
+        min-height: inherit;
+    }
+}
