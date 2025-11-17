@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>?</title>
+        <title>（ 'ヮ' ）</title>
         <link rel="icon" type="image/x-icon" href="________">
         <link rel="stylesheet" type="text/css" media="all" href="./ui/font.css" >
         <link rel="stylesheet" type="text/css" media="all" href="./ui/main.css" >
+        <link rel="stylesheet" type="text/css" media="all" href="./ui/illust.css" >
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <style>
-            .c-thumb{ width: 200px;}
-            .g-thumb{ width: 160px; border-radius: 8px;}
-            .row{ margin: 4px 20px;}
+            header{ display: none;}
+            .news{
+                position: relative;
+                top: -20px;
+            }
+            .c-thumb, .i-thumb{ box-shadow: 1px 1px 4px #00000040;}
         </style>
     </head>
     <body>
@@ -18,13 +22,24 @@
             <img src="./ui/meta/header.png">
         </header>
         <center>
-            <div class="mydiv">
+            <div class="mydiv" id="home">
                 <!--------------------------------  ▼ main ▼  -------------------------------->
                 <iframe class="side-frame" title="sidebar" scrolling="no" src="./sidebar.html"></iframe>
                 <div class="main">
+                    <div class="sepparate"></div>
                     <div class="main-content">
+                        <h1>news</h1>
+                        <div class="news">
+                        <h3><span>2025/11/17</span></h3>
+                        <p>- updated site layout and stories</p>
+                        <p>- i drew</p>
+                        <div class="row">
+                            <img class="i-thumb" loading="lazy" src="./illust/illust/Illustration128_p.png" onclick="openillust(this.nextElementSibling)">
+                            <div class="illust" onclick="closeillust(this)"><img loading="lazy" src="./illust/illust/Illustration128_.png"></div>
+                        </div>
                         <h3><span>2025/11/05</span></h3>
                         <p>site relaunch..... need to draw everything... ough........</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,5 +48,13 @@
         <footer>
                 <iframe class="foot-frame" title="footer" scrolling="yes" src="./footer.html"></iframe>
         </footer>
+        <script>
+        function openillust(x) {
+            x.style.display = "block";
+        }
+        function closeillust(x){
+            x.style.display = "none";
+        }
+        </script>
     </body>
 </html>
