@@ -17,7 +17,7 @@
     color: #808080;
     width: 98px;
     text-align: left;
-    border-right: 1px solid #d0d0d0;
+    border-right: 0px solid #d0d0d0;
 }
 .ooo-tr{
     width: 212px;
@@ -29,7 +29,7 @@
     padding: 0px 1px;
 }
 /* --------------------  big -------------------- */
-@media screen and (min-width: 520px){
+@media screen and (min-width: 800px){
     .ooo-big{ width: 420px;}
     .ooo-big .ooo-tr{ width: 312px;}
     .ooo-bigger{ width: 520px;}
