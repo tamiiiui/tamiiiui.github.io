@@ -7,7 +7,7 @@
     font-family: "nagino", Tahoma, sans-serif;
     font-size: 16px;
     text-decoration: none;
-    color: #ddd;
+    color: #dcdcdc;
     position: fixed;
     top: 8px;
     left: 16px; 
@@ -17,7 +17,7 @@
     width: 256px;
     height: 64px;
     background-color: #000;
-    border: 2px solid #e8eaec;
+    border: 2px solid #fffc;
     box-sizing: content-box;
     position: fixed;
     top: -48px;
@@ -43,5 +43,5 @@
 footer{
     border: none;
     padding-top: 0px;
-    filter: drop-shadow(0px -2px #e8eaec);
+    filter: drop-shadow(0px -2px #fffc);
 }
