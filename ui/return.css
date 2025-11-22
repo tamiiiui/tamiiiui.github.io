@@ -40,8 +40,17 @@
     
     z-index: 4;
 }
+
 footer{
-    border: none;
-    padding-top: 0px;
+    width: 100%;
+    font-size: 12px;
+    font-family: "nagino", Tahoma, sans-serif;
+    height: fit-content;
+    background-color: #000;
+    color: var(--acc3);
+    padding: 0px 0px 64px;
+    text-align: center;
+    
+    z-index: 3;
     filter: drop-shadow(0px -2px #fffc);
 }
