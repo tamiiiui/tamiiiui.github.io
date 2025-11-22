@@ -30,20 +30,27 @@
                         <p>
                             <a href="./illust/fa-log.html">FA</a> 
                         </p>
-                        <h2><span>oc</span></h2>
-                        <h2><span>fc</span></h2>
+                        <h2>2025</h2>
                         <div class="row">
                             <img class="i-thumb" loading="lazy" src="./illust/illust/Illustration128_p.png" onclick="openillust(this.nextElementSibling)">
-                            <div id="fc-001" class="illust" onclick="closeillust(this)"><img loading="lazy" src="./illust/illust/Illustration128_.png"></div>
+                            <div id="fc-001" class="illust" onclick="closeillust(this)" style="display: none;">
+                                <span>2025/11/17</span>
+                                <img loading="lazy" src="./illust/illust/Illustration128_.png">
+                            </div>
+                            <!------------------------------------->
+                            
                         </div>
-                        <h2><span>fa</span></h2>
                     </div>
                 </div>
             </div>
         </center>
             <!-------------------------------- ▲ main ▲ -------------------------------->
         <footer>
-            <iframe class="foot-frame" title="footer" scrolling="no" src="./footer.html"></iframe>
+            <p>© 2025 -
+            <script>
+                myDate = new Date() ;myYear = myDate.getFullYear ();document.write(myYear);
+            </script>
+            tamiiiui</p>
         </footer>
         <script>
         function openillust(x) {
