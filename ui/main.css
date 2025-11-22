@@ -9,9 +9,9 @@ a:link{ color: #0040c0;}
 .c-thumb{ width: 200px;}
 .i-thumb{
     width: 80px;
-    border-radius: 8px;
+    border-radius: 7.5px;
 }
-.row{ margin: 16px 24px;}
+.row{ margin: 20px 30px;}
 
 :root{
     --acc1: #c8c8c8;
@@ -45,54 +45,35 @@ footer{
 
     margin-top: 64px;
 
-    padding: 16px 0px 64px;
+    color: var(--acc3);
+    padding: 16px 0px 92px;
     border-top: 1px solid var(--acc3);
     z-index: 3;
 }
-.foot{
-    width: 400px;
-    background-color: var(--footbg);
-    color: var(--acc3);
-    font-size: 12px;
-    padding: 0px 0px 64px;
-    text-align: center;
-}
-.foot-frame{
-    border: none;
-    width: 400px;
-    height: 32px;
-}
+footer p{ margin: 0px;}
 
-p{ margin: 16px 24px 4px;}
+p{ margin: 20px 30px 0px}
 h1{
     font-family: "track", Tahoma, sans-serif;
     font-size: 48px;
     text-shadow: 2.5px 2.5px var(--txtshad);
-    margin: 8px 18px 32px;
-    padding-left: 4px;
+    margin: 10px 20px 30px;
+    padding-left: 7.5px;
     border-bottom: 2px solid var(--acc1);
     color: var(--title);
 }
-h1::before{
-    content: "";
-    color: var(--acc1);
-    position: absolute;
-    text-shadow: none;
-    font-size: 40px;
-    transform: translate(636px, 30px);
-}
 h2{
     font-size: 14px;
-    margin: 52px 24px 4px;
+    margin: 60px 30px 0px;
 }
-h2::before{ content: "--- ";}
-h2::after{ content: " ---";}
+h2::before{ content: "-- ";}
+h2::after{ content: " --";}
 h3{
     box-sizing: border-box;
     height: 32px;
     font-family: "track", Tahoma, sans-serif;
     font-size: 16px;
-    margin: 36px 18px 20px;
+    margin: 48px 20px 0px;
     padding: 0px 10px;
     color: var(--htxt2);
     border-bottom: 10px solid var(--htxt2);
@@ -122,21 +103,6 @@ h4::after{
     font-size: 20px;
     transform: translate( 2px, 19.5px);
 }
-h5{
-    box-sizing: border-box;
-    width: fit-content;
-    color: #a0a0a0;
-    font-size: 18px;
-    padding: 0px 8px 2px;
-    display: inline-block;
-    margin: 24px 24px 0px;
-    border: 1px solid var(--acc1);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 2px;
-    font-family: "track", Tahoma, sans-serif;
-    display: block;
-}
 hr{
     margin: 12px 8px 0px;
     border: none;
@@ -150,13 +116,13 @@ img {
     display: inline-block;
 }
 .ooo-table{
-    margin: 16px 24px 0px;
+    margin: 20px 30px 0px;
     border: 1px solid #c8c8c8;
     border-left-width: 0px;
     border-right-width: 0px;
-    padding: 4px 0px;
-    margin-top: 16px;
+    padding: 5px 0px;
 }
+.ooo-row{ margin: 5px 0px}
 .ooo-tl{ color: var(--txtlt);}
 
 /*--------------------------------  main  --------------------------------*/
@@ -167,7 +133,7 @@ img {
     flex-wrap: wrap;
     gap: 16px;
     background-color: #fff;
-    border-radius: 0px 0px 16px 16px;
+    border-radius: 0px 0px 25px 25px;
     padding-top: 16px;
 }
 
@@ -183,7 +149,7 @@ img {
 .main{
     width: 700px;
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 .main-content{
     font-family: inherit;
@@ -210,12 +176,10 @@ img {
 .x{ display: none;}
 
 @media screen and (min-width: 800px) and (max-width: 920px){ /*920*/
-    h1::before{ transform: translate(536px, 30px);}
     .mydiv{ width: 800px;}
     .main{ width: 600px;}
 }
 @media screen and (min-width: 600px) and (max-width: 800px){
-    h1::before{ transform: translate(536px, 30px);}
     .mydiv{ width: 600px;}
 }
 @media screen and (max-width: 800px){
@@ -226,15 +190,11 @@ img {
         height: 90px;
         width: 100%;
     }
+    .mydiv{padding: 20px 0px 0px;}
 }
 @media screen and (max-width: 600px){
-    h1::before{
-        transform: translate(0px, 30px);
-        right: 8px
-    }
     .mydiv{
         width: 100%;
         margin: 0px;
-        padding: 16px 0px 0px;
     }
 }
