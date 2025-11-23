@@ -9,7 +9,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <style>
-        .bmark{ width: fit-content;}
+        .bmark{
+            width: fit-content;
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
         .bmark img{
             width: 200px;
             height: 40px;
@@ -23,6 +27,28 @@
             margin: 10px 30px 10px 0px;
         }
         .h1-2{ margin-top: 80px;}
+        .szwarn{
+            filter: saturate(0.75) contrast(0.875);
+        }
+        .szwarn::after{
+            content: "warning: seizure / bright colors, movement" / "warning: seizure, bright colors, movement. end bookmark.";
+            font-size: 12px;
+            width: 192px;
+            display: inline-block;
+            position: absolute;
+            padding: 4px;
+            background-color: #000c;
+            color: #fff;
+            line-height: 16px;
+            text-align: center;
+        }
+        .szwarn:hover::after{
+            color: transparent;
+            background-color: transparent;
+        }
+        .szwarn2::after{
+            content: "warning: seizure / bright colors, movement (extreme)" / "warning: seizure, extereme bright colors, extreme movement. end bookmark.";
+        }
         </style>
     </head>
     <body>
@@ -45,7 +71,8 @@
                             <a class="bmark" title="the novarium" href="https://thenovarium.neocities.org/"><img src="https://thenovarium.neocities.org/novabookmark.png"></a>
                             <a class="bmark" title="kokumotsu" href="https://teambadger.neocities.org/"><img src="https://teambadger.neocities.org/images/banner.png"></a>
                             <a class="bmark" title="decomare" href="https://decomare.neocities.org/"><img src="https://decomare.neocities.org/decobuttonorg.png"></a>
-                            <a class="bmark" title="zenoslots" href="https://zenoslots.net/"><img src="https://zenoslots.net/IMAGES/BUTTONS/ZENOSLOTS_Big.png"></a>
+                            <a class="bmark szwarn" title="zenoslots" href="https://zenoslots.net/"><img src="https://zenoslots.net/IMAGES/BUTTONS/ZENOSLOTS_Big.png"></a>
+                            <a class="bmark szwarn szwarn2" title="sinproexe" href="https://sinproexe.net/"><img src="https://sinproexe.net/img/button200x40.png?v=2763"></a>
                             <!----------------   small  -------------------------------->
                             <hr>
                             <a class="bmark" title="dreamysite" href="https://sitatorisetu.wixsite.com/my-site-1/"><img style="width: 100px;" src="https://static.wixstatic.com/media/c6dd2d_d743fcf7e44e43f3990b3e9c0dacab18~mv2.gif"></a>
